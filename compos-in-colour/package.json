@@ -21,6 +21,9 @@
     "dev": "rollup -c -w",
     "start": "sirv public"
   },
-  "keywords": ["svelte", "starter"],
+  "keywords": [
+    "svelte",
+    "starter"
+  ],
   "description": "Svelte example starter project"
 }
