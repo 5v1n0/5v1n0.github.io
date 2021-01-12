@@ -130,7 +130,7 @@
 
 			
 		
-		<img id="appIcon" src="./img/appIcon_03.png" alt="appIcon"/>
+		<img id="appIcon" src="./img/UI/composition.png" alt="appIcon"/>
 		<br>
 		<span id= "appTitleFont">dEmoLog</span>
 		
