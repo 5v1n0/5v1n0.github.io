@@ -18,8 +18,17 @@
 	let readyToNodeWheel = false;
 	let loadedCoords = false;
 
-	//UI ELEMENTS//////////
+	let index = 0; // page load, default index
+	let max = 5; // how many pages there are
+
+	let navImg = "./img/UI/pg"+index+".png";
+	let navLabel = "dEmoLog";
+	
+
+		//UI ELEMENTS//////////
 	$: {
+		
+		//navImg;
 	}
 
 	function toggleTutorial() {
@@ -55,98 +64,146 @@
 
 	  document.getElementById("pingSource").style.color = "rgb(173,170,165)";
 	}
+
+	function scrollMenu(currentIndex, direction)
+	{
+		if(direction === "left")
+		{
+			if(currentIndex === 0)
+			{
+				index = max;
+			navImg = "./img/UI/pg"+index+".png";
+			scrollLabel(index);
+
+			}
+			else
+			{
+				index = currentIndex-1;
+				navImg = "./img/UI/pg"+index+".png";
+				scrollLabel(index);
+			}
+		}
+		if(direction === "right")
+		{
+			if(currentIndex === max)
+			{
+				index = 0;
+				navImg = "./img/UI/pg"+index+".png";
+				scrollLabel(index);
+			}
+		else
+			{
+				index = currentIndex+1;
+				navImg = "./img/UI/pg"+index+".png";
+				scrollLabel(index);
+			
+			}
+		}
+	}
+	function scrollLabel(currentPage)
+	{
+		switch (currentPage) {
+			case 0:
+				navLabel = "dEmoLog";
+				break;
+			case 1:
+				navLabel = "Home";
+				break;
+			case 2:
+				navLabel = "Beastiary";
+				break;
+			case 3:
+				navLabel = "Vent";
+				break;
+			case 4:
+				navLabel = "Records";
+				break;
+			case 5:
+				navLabel = "Composition";
+				break;
+		
+			default:
+				navLabel = "dEmoLog";
+				break;
+		}
+	}
+	function altNav(page)
+	{
+		scrollLabel(page);
+		navImg = "./img/UI/pg"+page+".png";
+		index = page;
+	}
+	
 </script>
 <div class="container">
 	<div class="mini-container">
 		<div class="COF-wheel">
 		<div id="help">
-		<p><button id="tutBtn" on:click={()=> toggleTutorial()}>Features</button></p>
+		<p><button id="tutBtn" on:click={()=> toggleTutorial()}>Alt</button></p>
 
 	{#if help === true}
 	<div id="help-box" transition:slide="{{duration: 300 }}">
+		<div id="help-0" class="helpBoundary">
+			<a href="#s" on:click={()=> altNav(0)}>dEmoLog</a>
+			
+		</div>
 		<div id="help-1" class="helpBoundary">
-			<a href="#s" on:click={()=> toggleGifBlinder(1)}>Beastiary</a>
-			{#if toggleGif === 1}
-			<p>Immersion: Envisioning mental illnesses as Demons, complete with lore.<br></p>
-			<p>Choose the demon you want to vanquish.</p>
-			<p>Unlock new demons.</p>
-			<div transition:slide="{{duration: 300 }}" class="gifHolder">
-			<img id="tut1" src="./img/Beastiary.gif" alt="tut1"/>
-			</div>
-			{/if}
+			<a href="#s" on:click={()=> altNav(1)}>Home</a>
+			
 		</div>
 		<div id="help-2" class="helpBoundary">
-			<a href="#s" on:click={()=> toggleGifBlinder(2)}>Vent</a>
-			{#if toggleGif === 2}
-			<p>Gameplay: Choose 3 of 9 available emotions to begin emotion logging.<br></p>
-			<p>Vanquish your inner demon by attacking with emotions you feel strongly about.</p>
-			<div transition:slide="{{duration: 300 }}">
-				<img id="tut2" src="./img/Vent.gif" alt="tut2"/>
-				</div>
-			{/if}
+			<a href="#s" on:click={()=> altNav(2)}>Beastiary</a>
+			
 		</div>
 		<div id="help-3" class="helpBoundary">
-			<a href="#s" on:click={()=> toggleGifBlinder(3)}>Records</a>
-			{#if toggleGif === 3}
-			<p>Review your emotion logs to reflect.<br></p>
-			<p>You may add short personal notes for more details.</p>
-			<div transition:slide="{{duration: 300 }}">
-				<img id="tut3" src="./img/Records.gif" alt="tut3"/>
-				</div>
-			{/if}
+			<a href="#s" on:click={()=> altNav(3)}>Vent</a>
+			
 		</div>
 		<div id="help-4" class="helpBoundary">
-			<a href="#s" on:click={()=> toggleGifBlinder(4)}>Progression</a>
-			{#if toggleGif === 4}
-			<p>Inventory tracks loots collected from Venting.<br></p>
-			<p>Use acquired items to unlock new demon targets.</p>
-			<div transition:slide="{{duration: 300 }}">
-				<img id="tut4" src="./img/Progression.gif" alt="tut4"/>
-				</div>
-			{/if}
+			<a href="#s" on:click={()=> altNav(4)}>Records</a>
+			
 		</div>
 		<div id="help-5" class="helpBoundary">
-			<a href="#s" on:click={()=> toggleGifBlinder(5)}>Composition</a>
-			{#if toggleGif === 5}
-			<p>-WORK IN PROGRESS-</p>
-			<div transition:slide="{{duration: 300 }}">
-				<img id="tut5" src="" alt="tut5"/>
-				</div>
-			{/if}
-		</div>
-		<div id="help-6" class="helpBoundary">
-			<a href="#s" on:click={()=> toggleGifBlinder(6)}>Friends</a>
-			{#if toggleGif === 6}
-			<p>-WORK IN PROGRESS-</p>
-			<div transition:slide="{{duration: 300 }}">
-				<img id="tut6" src="" alt="tut6"/>
-				</div>
-			{/if}
+			<a href="#s" on:click={()=> altNav(5)}>Composition</a>
+			
 		</div>
 	</div>
 	{/if}
 	</div>
-		<p class="select-container">
-
+			<div id="scroller">
 			
-		
-		<img id="appIcon" src="./img/UI/composition.png" alt="appIcon"/>
-		<br>
-		<span id= "appTitleFont">dEmoLog</span>
-		
+			<table>
+			<tr>
+			<td colspan="3" class="fixedImgHolder">
+			{#key navImg}
+				<img in:fade="{{delay:100 , duration: 300}}" id="appIcon" src={navImg} alt="appIcon" />
+			{/key}
+			</td>
+			</tr>
+			<tr class="fixedLabelHolder">
+			<td><img id="sliderBtn" src="./img/UI/arrow_L.png" alt="leftArrow" on:click={()=> scrollMenu(index,"left")}/></td>
+				<td>{#key navLabel}
+					<span in:fade="{{delay:100 , duration: 300}}" id= "appTitleFont">{navLabel}</span>
+					{/key}
+				</td>
+			<td><img id="sliderBtn" src="./img/UI/arrow_R.png" alt="rightArrow" on:click={()=> scrollMenu(index,"right")}/></td>
+			</tr>
+			</table>
+			
+			<br>
+			
+				
+			
+			</div>
 		</div>
 		<!-- INTRO START-->
 		
 		<div class="song-detail">
 			<div class="introBox">
+			{#if index === 0}
 				<span class="description-header">About</span>
-				
 				<p>The Demon Emotion Log abbreviated: dEmoLog, is an prototype app that integrates game elements (gamification) to the traditional Mood Diary concept. <br>
 				The hope is that with Gamification added, users would have increased motivation to log their moods regularly, thus aiding their management of mental health.<br>
-				Check out the <a id="pingSource" href="#" 
-				on:mouseover={ () => pingTutorialIn() }
-				on:mouseout={ () => pingTutorialOut() }
-				>Features</a> for a quick highlight of what the app offers. ** GIFs not indicative of final app look.
 				</p>
 				<br>
 				<span class="description-header">Gamification</span>
@@ -167,6 +224,33 @@
 					<p>- Work in progress: Composition<br>
 					- Current info is accurate as of 8 Jan 2021
 				</p>
+			{/if}
+			{#if index === 1}
+			<span class="description-header">Home</span>
+				<p>"They say home is where the heart is. But here, home is where your mind is." 
+				</p>
+			{/if}
+			{#if index === 2}
+			<span class="description-header">Beastiary</span>
+				<p>"Hey, wouldn't it be nice if there was a way to beat them? Out of sight out of mind..."
+				</p>
+			{/if}
+			{#if index === 3}
+			<span class="description-header">Vent</span>
+				<p>"It would seem that they can be vanquished with emotions..."
+				"Its not safe... here take these tomes, they're catalysts to manifest your emotions as ammunitions... Happy hunting!"
+				</p>
+			{/if}
+			{#if index === 4}
+			<span class="description-header">Records</span>
+				<p>"Perhaps logging these emotions every instance I vent would allow me to recall what happened and be more efficient..."
+				</p>
+			{/if}
+			{#if index === 5}
+			<span class="description-header">Composition</span>
+				<p>"Recall? Can I recall? Did you know, some people say music"
+				</p>
+			{/if}
 			</div>
 		</div>
 		
