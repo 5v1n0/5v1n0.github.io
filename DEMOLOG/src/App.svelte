@@ -18,11 +18,20 @@
 	let readyToNodeWheel = false;
 	let loadedCoords = false;
 
+
 	let index = 0; // page load, default index
 	let max = 5; // how many pages there are
 
 	let navImg = "./img/UI/pg"+index+".png";
 	let navLabel = "dEmoLog";
+
+	
+
+	let HomeArr = ["Avatar", "Inventory", "Grimoire"];
+	let BeastArr = ["Lore", "Select", "Unlock"];
+	let VentArr = ["Emotion Tomes", "Vanquish", "Loots"];
+	let RecordsArr = ["Calendar"];
+	let CompArr = ["-WIP-"];
 	
 
 		//UI ELEMENTS//////////
@@ -108,6 +117,7 @@
 				break;
 			case 1:
 				navLabel = "Home";
+				
 				break;
 			case 2:
 				navLabel = "Beastiary";
@@ -133,13 +143,40 @@
 		navImg = "./img/UI/pg"+page+".png";
 		index = page;
 	}
+
+
+let aHistory =""
+	let aCurrent =""
+	function handleSubNav(subNav, i)
+	{
+		aCurrent = document.getElementById(subNav+i)
+
+		if(aHistory === "") // if empty at start, set both history and selection as selected.
+		{
+			
+			aHistory = aCurrent
+			aCurrent.style.background="#f6f6f6"
+		}
+		if(aHistory === aCurrent)
+		{
+			// do nothing cuz clicked on same
+		}
+		if(aCurrent !== aHistory) //if selecting different li
+		{
+			aHistory.style.background ="#EDEAE5" // history li to not highlighted
+			
+			aCurrent.style.background="#f6f6f6" // 
+			aHistory = aCurrent
+			
+		}
+	}
 	
 </script>
 <div class="container">
 	<div class="mini-container">
 		<div class="COF-wheel">
 		<div id="help">
-		<p><button id="tutBtn" on:click={()=> toggleTutorial()}>Alt</button></p>
+		<p><button id="tutBtn" on:click={()=> toggleTutorial()}>&#9776;</button></p>
 
 	{#if help === true}
 	<div id="help-box" transition:slide="{{duration: 300 }}">
@@ -199,6 +236,69 @@
 		<!-- INTRO START-->
 		
 		<div class="song-detail">
+		{#if index != 0}
+		<div class="song-detail-left">
+					<div class="list-header">
+					</div>
+					<div class="list-container">
+					{#if index === 1}
+						<ul>
+						{#each HomeArr as subNav, i}
+							<li>
+							<a id={subNav+i} href="#" 
+								on:click={()=>handleSubNav(subNav, i)}
+								 >{subNav}</a>
+							</li>
+							{/each}		
+						</ul>
+					{/if}
+					{#if index === 2}
+						<ul>
+						{#each BeastArr as subNav, i}
+							<li>
+							<a id={subNav+i} href="#" 
+								on:click={()=>handleSubNav(subNav, i)}
+								 >{subNav}</a>
+							</li>
+							{/each}		
+						</ul>
+					{/if}
+					{#if index === 3}
+						<ul>
+						{#each VentArr as subNav, i}
+							<li>
+							<a id={subNav+i} href="#" 
+								on:click={()=>handleSubNav(subNav, i)}
+								 >{subNav}</a>
+							</li>
+							{/each}		
+						</ul>
+					{/if}
+					{#if index === 4}
+						<ul>
+						{#each RecordsArr as subNav, i}
+							<li>
+							<a id={subNav+i} href="#" 
+								on:click={()=>handleSubNav(subNav, i)}
+								 >{subNav}</a>
+							</li>
+							{/each}		
+						</ul>
+					{/if}
+					{#if index === 5}
+						<ul>
+						{#each CompArr as subNav, i}
+							<li>
+							<a id={subNav+i} href="#" 
+								on:click={()=>handleSubNav(subNav, i)}
+								 >{subNav}</a>
+							</li>
+							{/each}		
+						</ul>
+					{/if}					
+					</div>
+			</div>
+			{/if}
 			<div class="introBox">
 			{#if index === 0}
 				<span class="description-header">About</span>
@@ -237,7 +337,7 @@
 			{/if}
 			{#if index === 3}
 			<span class="description-header">Vent</span>
-				<p>"It would seem that they can be vanquished with emotions..."
+				<p>"It would seem that they can be vanquished with emotions..."<br>
 				"Its not safe... here take these tomes, they're catalysts to manifest your emotions as ammunitions... Happy hunting!"
 				</p>
 			{/if}
