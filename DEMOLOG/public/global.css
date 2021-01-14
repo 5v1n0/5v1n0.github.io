@@ -338,7 +338,8 @@ button:focus {
 }
 .right-inner-left {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  font-size: 12px;
 }
 
 #song-info {
@@ -641,11 +642,11 @@ a {
 #hoverGhostBoo {
   z-index: -1;
 }
-#home {
+#dEmoLog {
   display: block;
   font-weight: 400;
 }
-#home:hover {
+#dEmoLog:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -779,4 +780,10 @@ a {
   height:110px;
   background-image:url(img/UI/ribbon_3000.png);
   background-repeat:no-repeat;background-size:519px 110px;
+}
+.gifHolder
+{
+  display: block;
+  width: 300px;
+  height: auto;
 }

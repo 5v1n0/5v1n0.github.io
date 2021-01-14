@@ -94,6 +94,9 @@ var app = (function () {
     function space() {
         return text(' ');
     }
+    function empty() {
+        return text('');
+    }
     function listen(node, event, handler, options) {
         node.addEventListener(event, handler, options);
         return () => node.removeEventListener(event, handler, options);
@@ -941,41 +944,41 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
-    	child_ctx[47] = i;
+    	child_ctx[47] = list[i];
+    	child_ctx[49] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
-    	child_ctx[47] = i;
+    	child_ctx[47] = list[i];
+    	child_ctx[49] = i;
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
-    	child_ctx[47] = i;
+    	child_ctx[47] = list[i];
+    	child_ctx[49] = i;
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
-    	child_ctx[47] = i;
+    	child_ctx[47] = list[i];
+    	child_ctx[49] = i;
     	return child_ctx;
     }
 
     function get_each_context_4(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[45] = list[i];
-    	child_ctx[47] = i;
+    	child_ctx[47] = list[i];
+    	child_ctx[49] = i;
     	return child_ctx;
     }
 
-    // (181:1) {#if help === true}
-    function create_if_block_12(ctx) {
+    // (186:1) {#if help === true}
+    function create_if_block_24(ctx) {
     	let div6;
     	let div0;
     	let a0;
@@ -1026,37 +1029,37 @@ var app = (function () {
     			a5 = element("a");
     			a5.textContent = "Composition";
     			attr_dev(a0, "href", "#s");
-    			add_location(a0, file, 183, 3, 4069);
+    			add_location(a0, file, 188, 3, 4274);
     			attr_dev(div0, "id", "help-0");
     			attr_dev(div0, "class", "helpBoundary");
-    			add_location(div0, file, 182, 2, 4026);
+    			add_location(div0, file, 187, 2, 4231);
     			attr_dev(a1, "href", "#s");
-    			add_location(a1, file, 187, 3, 4181);
+    			add_location(a1, file, 192, 3, 4386);
     			attr_dev(div1, "id", "help-1");
     			attr_dev(div1, "class", "helpBoundary");
-    			add_location(div1, file, 186, 2, 4138);
+    			add_location(div1, file, 191, 2, 4343);
     			attr_dev(a2, "href", "#s");
-    			add_location(a2, file, 191, 3, 4290);
+    			add_location(a2, file, 196, 3, 4495);
     			attr_dev(div2, "id", "help-2");
     			attr_dev(div2, "class", "helpBoundary");
-    			add_location(div2, file, 190, 2, 4247);
+    			add_location(div2, file, 195, 2, 4452);
     			attr_dev(a3, "href", "#s");
-    			add_location(a3, file, 195, 3, 4404);
+    			add_location(a3, file, 200, 3, 4609);
     			attr_dev(div3, "id", "help-3");
     			attr_dev(div3, "class", "helpBoundary");
-    			add_location(div3, file, 194, 2, 4361);
+    			add_location(div3, file, 199, 2, 4566);
     			attr_dev(a4, "href", "#s");
-    			add_location(a4, file, 199, 3, 4513);
+    			add_location(a4, file, 204, 3, 4718);
     			attr_dev(div4, "id", "help-4");
     			attr_dev(div4, "class", "helpBoundary");
-    			add_location(div4, file, 198, 2, 4470);
+    			add_location(div4, file, 203, 2, 4675);
     			attr_dev(a5, "href", "#s");
-    			add_location(a5, file, 203, 3, 4625);
+    			add_location(a5, file, 208, 3, 4830);
     			attr_dev(div5, "id", "help-5");
     			attr_dev(div5, "class", "helpBoundary");
-    			add_location(div5, file, 202, 2, 4582);
+    			add_location(div5, file, 207, 2, 4787);
     			attr_dev(div6, "id", "help-box");
-    			add_location(div6, file, 181, 1, 3965);
+    			add_location(div6, file, 186, 1, 4170);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div6, anchor);
@@ -1081,12 +1084,12 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(a0, "click", /*click_handler_1*/ ctx[15], false, false, false),
-    					listen_dev(a1, "click", /*click_handler_2*/ ctx[16], false, false, false),
-    					listen_dev(a2, "click", /*click_handler_3*/ ctx[17], false, false, false),
-    					listen_dev(a3, "click", /*click_handler_4*/ ctx[18], false, false, false),
-    					listen_dev(a4, "click", /*click_handler_5*/ ctx[19], false, false, false),
-    					listen_dev(a5, "click", /*click_handler_6*/ ctx[20], false, false, false)
+    					listen_dev(a0, "click", /*click_handler_1*/ ctx[16], false, false, false),
+    					listen_dev(a1, "click", /*click_handler_2*/ ctx[17], false, false, false),
+    					listen_dev(a2, "click", /*click_handler_3*/ ctx[18], false, false, false),
+    					listen_dev(a3, "click", /*click_handler_4*/ ctx[19], false, false, false),
+    					listen_dev(a4, "click", /*click_handler_5*/ ctx[20], false, false, false),
+    					listen_dev(a5, "click", /*click_handler_6*/ ctx[21], false, false, false)
     				];
 
     				mounted = true;
@@ -1118,16 +1121,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12.name,
+    		id: create_if_block_24.name,
     		type: "if",
-    		source: "(181:1) {#if help === true}",
+    		source: "(186:1) {#if help === true}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (215:3) {#key navImg}
+    // (220:3) {#key navImg}
     function create_key_block_1(ctx) {
     	let img;
     	let img_src_value;
@@ -1139,7 +1142,7 @@ var app = (function () {
     			attr_dev(img, "id", "appIcon");
     			if (img.src !== (img_src_value = /*navImg*/ ctx[3])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "appIcon");
-    			add_location(img, file, 215, 4, 4838);
+    			add_location(img, file, 220, 4, 5043);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -1167,14 +1170,14 @@ var app = (function () {
     		block,
     		id: create_key_block_1.name,
     		type: "key",
-    		source: "(215:3) {#key navImg}",
+    		source: "(220:3) {#key navImg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (222:8) {#key navLabel}
+    // (227:8) {#key navLabel}
     function create_key_block(ctx) {
     	let span;
     	let t;
@@ -1185,7 +1188,7 @@ var app = (function () {
     			span = element("span");
     			t = text(/*navLabel*/ ctx[4]);
     			attr_dev(span, "id", "appTitleFont");
-    			add_location(span, file, 222, 5, 5141);
+    			add_location(span, file, 227, 5, 5346);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1212,15 +1215,15 @@ var app = (function () {
     		block,
     		id: create_key_block.name,
     		type: "key",
-    		source: "(222:8) {#key navLabel}",
+    		source: "(227:8) {#key navLabel}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (239:2) {#if index != 0}
-    function create_if_block_6(ctx) {
+    // (244:2) {#if index != 0}
+    function create_if_block_18(ctx) {
     	let div2;
     	let div0;
     	let t0;
@@ -1229,11 +1232,11 @@ var app = (function () {
     	let t2;
     	let t3;
     	let t4;
-    	let if_block0 = /*index*/ ctx[2] === 1 && create_if_block_11(ctx);
-    	let if_block1 = /*index*/ ctx[2] === 2 && create_if_block_10(ctx);
-    	let if_block2 = /*index*/ ctx[2] === 3 && create_if_block_9(ctx);
-    	let if_block3 = /*index*/ ctx[2] === 4 && create_if_block_8(ctx);
-    	let if_block4 = /*index*/ ctx[2] === 5 && create_if_block_7(ctx);
+    	let if_block0 = /*index*/ ctx[2] === 1 && create_if_block_23(ctx);
+    	let if_block1 = /*index*/ ctx[2] === 2 && create_if_block_22(ctx);
+    	let if_block2 = /*index*/ ctx[2] === 3 && create_if_block_21(ctx);
+    	let if_block3 = /*index*/ ctx[2] === 4 && create_if_block_20(ctx);
+    	let if_block4 = /*index*/ ctx[2] === 5 && create_if_block_19(ctx);
 
     	const block = {
     		c: function create() {
@@ -1251,11 +1254,11 @@ var app = (function () {
     			t4 = space();
     			if (if_block4) if_block4.c();
     			attr_dev(div0, "class", "list-header");
-    			add_location(div0, file, 240, 5, 5559);
+    			add_location(div0, file, 245, 5, 5764);
     			attr_dev(div1, "class", "list-container");
-    			add_location(div1, file, 242, 5, 5604);
+    			add_location(div1, file, 247, 5, 5809);
     			attr_dev(div2, "class", "song-detail-left");
-    			add_location(div2, file, 239, 2, 5522);
+    			add_location(div2, file, 244, 2, 5727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -1277,7 +1280,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_11(ctx);
+    					if_block0 = create_if_block_23(ctx);
     					if_block0.c();
     					if_block0.m(div1, t1);
     				}
@@ -1290,7 +1293,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_10(ctx);
+    					if_block1 = create_if_block_22(ctx);
     					if_block1.c();
     					if_block1.m(div1, t2);
     				}
@@ -1303,7 +1306,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_9(ctx);
+    					if_block2 = create_if_block_21(ctx);
     					if_block2.c();
     					if_block2.m(div1, t3);
     				}
@@ -1316,7 +1319,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_8(ctx);
+    					if_block3 = create_if_block_20(ctx);
     					if_block3.c();
     					if_block3.m(div1, t4);
     				}
@@ -1329,7 +1332,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_7(ctx);
+    					if_block4 = create_if_block_19(ctx);
     					if_block4.c();
     					if_block4.m(div1, null);
     				}
@@ -1350,19 +1353,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_6.name,
+    		id: create_if_block_18.name,
     		type: "if",
-    		source: "(239:2) {#if index != 0}",
+    		source: "(244:2) {#if index != 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (244:5) {#if index === 1}
-    function create_if_block_11(ctx) {
+    // (249:5) {#if index === 1}
+    function create_if_block_23(ctx) {
     	let ul;
-    	let each_value_4 = /*HomeArr*/ ctx[5];
+    	let each_value_4 = /*HomeArr*/ ctx[6];
     	validate_each_argument(each_value_4);
     	let each_blocks = [];
 
@@ -1378,7 +1381,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(ul, file, 244, 6, 5664);
+    			add_location(ul, file, 249, 6, 5869);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1388,8 +1391,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*HomeArr, handleSubNav*/ 8224) {
-    				each_value_4 = /*HomeArr*/ ctx[5];
+    			if (dirty[0] & /*HomeArr, handleSubNav*/ 16448) {
+    				each_value_4 = /*HomeArr*/ ctx[6];
     				validate_each_argument(each_value_4);
     				let i;
 
@@ -1420,20 +1423,20 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11.name,
+    		id: create_if_block_23.name,
     		type: "if",
-    		source: "(244:5) {#if index === 1}",
+    		source: "(249:5) {#if index === 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (246:6) {#each HomeArr as subNav, i}
+    // (251:6) {#each HomeArr as subNav, i}
     function create_each_block_4(ctx) {
     	let li;
     	let a;
-    	let t0_value = /*subNav*/ ctx[45] + "";
+    	let t0_value = /*subNav*/ ctx[47] + "";
     	let t0;
     	let a_id_value;
     	let t1;
@@ -1441,7 +1444,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_9() {
-    		return /*click_handler_9*/ ctx[23](/*subNav*/ ctx[45], /*i*/ ctx[47]);
+    		return /*click_handler_9*/ ctx[24](/*subNav*/ ctx[47], /*i*/ ctx[49]);
     	}
 
     	const block = {
@@ -1450,10 +1453,10 @@ var app = (function () {
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[45] + /*i*/ ctx[47]);
+    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[47] + /*i*/ ctx[49]);
     			attr_dev(a, "href", "#");
-    			add_location(a, file, 247, 7, 5726);
-    			add_location(li, file, 246, 7, 5713);
+    			add_location(a, file, 252, 7, 5931);
+    			add_location(li, file, 251, 7, 5918);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1480,17 +1483,17 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(246:6) {#each HomeArr as subNav, i}",
+    		source: "(251:6) {#each HomeArr as subNav, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (255:5) {#if index === 2}
-    function create_if_block_10(ctx) {
+    // (260:5) {#if index === 2}
+    function create_if_block_22(ctx) {
     	let ul;
-    	let each_value_3 = /*BeastArr*/ ctx[6];
+    	let each_value_3 = /*BeastArr*/ ctx[7];
     	validate_each_argument(each_value_3);
     	let each_blocks = [];
 
@@ -1506,7 +1509,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(ul, file, 255, 6, 5913);
+    			add_location(ul, file, 260, 6, 6118);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1516,8 +1519,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*BeastArr, handleSubNav*/ 8256) {
-    				each_value_3 = /*BeastArr*/ ctx[6];
+    			if (dirty[0] & /*BeastArr, handleSubNav*/ 16512) {
+    				each_value_3 = /*BeastArr*/ ctx[7];
     				validate_each_argument(each_value_3);
     				let i;
 
@@ -1548,20 +1551,20 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10.name,
+    		id: create_if_block_22.name,
     		type: "if",
-    		source: "(255:5) {#if index === 2}",
+    		source: "(260:5) {#if index === 2}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (257:6) {#each BeastArr as subNav, i}
+    // (262:6) {#each BeastArr as subNav, i}
     function create_each_block_3(ctx) {
     	let li;
     	let a;
-    	let t0_value = /*subNav*/ ctx[45] + "";
+    	let t0_value = /*subNav*/ ctx[47] + "";
     	let t0;
     	let a_id_value;
     	let t1;
@@ -1569,7 +1572,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_10() {
-    		return /*click_handler_10*/ ctx[24](/*subNav*/ ctx[45], /*i*/ ctx[47]);
+    		return /*click_handler_10*/ ctx[25](/*subNav*/ ctx[47], /*i*/ ctx[49]);
     	}
 
     	const block = {
@@ -1578,10 +1581,10 @@ var app = (function () {
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[45] + /*i*/ ctx[47]);
+    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[47] + /*i*/ ctx[49]);
     			attr_dev(a, "href", "#");
-    			add_location(a, file, 258, 7, 5976);
-    			add_location(li, file, 257, 7, 5963);
+    			add_location(a, file, 263, 7, 6181);
+    			add_location(li, file, 262, 7, 6168);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1608,17 +1611,17 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(257:6) {#each BeastArr as subNav, i}",
+    		source: "(262:6) {#each BeastArr as subNav, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (266:5) {#if index === 3}
-    function create_if_block_9(ctx) {
+    // (271:5) {#if index === 3}
+    function create_if_block_21(ctx) {
     	let ul;
-    	let each_value_2 = /*VentArr*/ ctx[7];
+    	let each_value_2 = /*VentArr*/ ctx[8];
     	validate_each_argument(each_value_2);
     	let each_blocks = [];
 
@@ -1634,7 +1637,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(ul, file, 266, 6, 6163);
+    			add_location(ul, file, 271, 6, 6368);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1644,8 +1647,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*VentArr, handleSubNav*/ 8320) {
-    				each_value_2 = /*VentArr*/ ctx[7];
+    			if (dirty[0] & /*VentArr, handleSubNav*/ 16640) {
+    				each_value_2 = /*VentArr*/ ctx[8];
     				validate_each_argument(each_value_2);
     				let i;
 
@@ -1676,20 +1679,20 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9.name,
+    		id: create_if_block_21.name,
     		type: "if",
-    		source: "(266:5) {#if index === 3}",
+    		source: "(271:5) {#if index === 3}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (268:6) {#each VentArr as subNav, i}
+    // (273:6) {#each VentArr as subNav, i}
     function create_each_block_2(ctx) {
     	let li;
     	let a;
-    	let t0_value = /*subNav*/ ctx[45] + "";
+    	let t0_value = /*subNav*/ ctx[47] + "";
     	let t0;
     	let a_id_value;
     	let t1;
@@ -1697,7 +1700,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_11() {
-    		return /*click_handler_11*/ ctx[25](/*subNav*/ ctx[45], /*i*/ ctx[47]);
+    		return /*click_handler_11*/ ctx[26](/*subNav*/ ctx[47], /*i*/ ctx[49]);
     	}
 
     	const block = {
@@ -1706,10 +1709,10 @@ var app = (function () {
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[45] + /*i*/ ctx[47]);
+    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[47] + /*i*/ ctx[49]);
     			attr_dev(a, "href", "#");
-    			add_location(a, file, 269, 7, 6225);
-    			add_location(li, file, 268, 7, 6212);
+    			add_location(a, file, 274, 7, 6430);
+    			add_location(li, file, 273, 7, 6417);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1736,17 +1739,17 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(268:6) {#each VentArr as subNav, i}",
+    		source: "(273:6) {#each VentArr as subNav, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (277:5) {#if index === 4}
-    function create_if_block_8(ctx) {
+    // (282:5) {#if index === 4}
+    function create_if_block_20(ctx) {
     	let ul;
-    	let each_value_1 = /*RecordsArr*/ ctx[8];
+    	let each_value_1 = /*RecordsArr*/ ctx[9];
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -1762,7 +1765,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(ul, file, 277, 6, 6412);
+    			add_location(ul, file, 282, 6, 6617);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1772,8 +1775,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*RecordsArr, handleSubNav*/ 8448) {
-    				each_value_1 = /*RecordsArr*/ ctx[8];
+    			if (dirty[0] & /*RecordsArr, handleSubNav*/ 16896) {
+    				each_value_1 = /*RecordsArr*/ ctx[9];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -1804,20 +1807,20 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8.name,
+    		id: create_if_block_20.name,
     		type: "if",
-    		source: "(277:5) {#if index === 4}",
+    		source: "(282:5) {#if index === 4}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (279:6) {#each RecordsArr as subNav, i}
+    // (284:6) {#each RecordsArr as subNav, i}
     function create_each_block_1(ctx) {
     	let li;
     	let a;
-    	let t0_value = /*subNav*/ ctx[45] + "";
+    	let t0_value = /*subNav*/ ctx[47] + "";
     	let t0;
     	let a_id_value;
     	let t1;
@@ -1825,7 +1828,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_12() {
-    		return /*click_handler_12*/ ctx[26](/*subNav*/ ctx[45], /*i*/ ctx[47]);
+    		return /*click_handler_12*/ ctx[27](/*subNav*/ ctx[47], /*i*/ ctx[49]);
     	}
 
     	const block = {
@@ -1834,10 +1837,10 @@ var app = (function () {
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[45] + /*i*/ ctx[47]);
+    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[47] + /*i*/ ctx[49]);
     			attr_dev(a, "href", "#");
-    			add_location(a, file, 280, 7, 6477);
-    			add_location(li, file, 279, 7, 6464);
+    			add_location(a, file, 285, 7, 6682);
+    			add_location(li, file, 284, 7, 6669);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1864,17 +1867,17 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(279:6) {#each RecordsArr as subNav, i}",
+    		source: "(284:6) {#each RecordsArr as subNav, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (288:5) {#if index === 5}
-    function create_if_block_7(ctx) {
+    // (293:5) {#if index === 5}
+    function create_if_block_19(ctx) {
     	let ul;
-    	let each_value = /*CompArr*/ ctx[9];
+    	let each_value = /*CompArr*/ ctx[10];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -1890,7 +1893,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(ul, file, 288, 6, 6664);
+    			add_location(ul, file, 293, 6, 6869);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1900,8 +1903,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*CompArr, handleSubNav*/ 8704) {
-    				each_value = /*CompArr*/ ctx[9];
+    			if (dirty[0] & /*CompArr, handleSubNav*/ 17408) {
+    				each_value = /*CompArr*/ ctx[10];
     				validate_each_argument(each_value);
     				let i;
 
@@ -1932,20 +1935,20 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7.name,
+    		id: create_if_block_19.name,
     		type: "if",
-    		source: "(288:5) {#if index === 5}",
+    		source: "(293:5) {#if index === 5}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (290:6) {#each CompArr as subNav, i}
+    // (295:6) {#each CompArr as subNav, i}
     function create_each_block(ctx) {
     	let li;
     	let a;
-    	let t0_value = /*subNav*/ ctx[45] + "";
+    	let t0_value = /*subNav*/ ctx[47] + "";
     	let t0;
     	let a_id_value;
     	let t1;
@@ -1953,7 +1956,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_13() {
-    		return /*click_handler_13*/ ctx[27](/*subNav*/ ctx[45], /*i*/ ctx[47]);
+    		return /*click_handler_13*/ ctx[28](/*subNav*/ ctx[47], /*i*/ ctx[49]);
     	}
 
     	const block = {
@@ -1962,10 +1965,10 @@ var app = (function () {
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[45] + /*i*/ ctx[47]);
+    			attr_dev(a, "id", a_id_value = /*subNav*/ ctx[47] + /*i*/ ctx[49]);
     			attr_dev(a, "href", "#");
-    			add_location(a, file, 291, 7, 6726);
-    			add_location(li, file, 290, 7, 6713);
+    			add_location(a, file, 296, 7, 6931);
+    			add_location(li, file, 295, 7, 6918);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1992,18 +1995,18 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(290:6) {#each CompArr as subNav, i}",
+    		source: "(295:6) {#each CompArr as subNav, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (303:3) {#if index === 0}
-    function create_if_block_5(ctx) {
-    	let span0;
+    // (308:3) {#if index === 0}
+    function create_if_block_16(ctx) {
+    	let span;
     	let t1;
-    	let p0;
+    	let p;
     	let t2;
     	let br0;
     	let t3;
@@ -2011,236 +2014,568 @@ var app = (function () {
     	let t4;
     	let br2;
     	let t5;
-    	let span1;
+    	let div1;
+    	let div0;
+    	let label;
     	let t7;
-    	let p1;
+    	let input;
     	let t8;
-    	let br3;
+    	let hr;
     	let t9;
-    	let br4;
-    	let t10;
-    	let br5;
-    	let t11;
-    	let br6;
-    	let t12;
-    	let t13;
-    	let br7;
-    	let t14;
-    	let span2;
-    	let t16;
-    	let p2;
-    	let t17;
-    	let br8;
-    	let t18;
-    	let br9;
-    	let t19;
-    	let t20;
-    	let br10;
-    	let t21;
-    	let span3;
-    	let t23;
-    	let p3;
-    	let t24;
-    	let br11;
-    	let t25;
+    	let if_block_anchor;
+    	let current;
+    	let mounted;
+    	let dispose;
+    	let if_block = /*showRightInnerLeft*/ ctx[0] === true && create_if_block_17(ctx);
 
     	const block = {
     		c: function create() {
-    			span0 = element("span");
-    			span0.textContent = "About";
+    			span = element("span");
+    			span.textContent = "About";
     			t1 = space();
-    			p0 = element("p");
-    			t2 = text("The Demon Emotion Log abbreviated: dEmoLog, is an prototype app that integrates game elements (gamification) to the traditional Mood Diary concept. ");
+    			p = element("p");
+    			t2 = text("The Demon Emotion Log abbreviated: dEmoLog, is an app prototype that integrates game elements (gamification) to the traditional Mood Diary concept. ");
     			br0 = element("br");
     			t3 = text("\r\n\t\t\t\tThe hope is that with Gamification added, users would have increased motivation to log their moods regularly, thus aiding their management of mental health.");
     			br1 = element("br");
     			t4 = space();
     			br2 = element("br");
     			t5 = space();
-    			span1 = element("span");
-    			span1.textContent = "Gamification";
+    			div1 = element("div");
+    			div0 = element("div");
+    			label = element("label");
+    			label.textContent = "◓";
     			t7 = space();
-    			p1 = element("p");
-    			t8 = text("Some Gamification elements integrated in the app include:");
-    			br3 = element("br");
-    			t9 = text("\r\n\t\t\t\t\t- Narrative: create an immersive backstory/setting");
-    			br4 = element("br");
-    			t10 = text("\r\n\t\t\t\t\t- Aesthetic: an specific aesthetic of artwork for further immersion");
-    			br5 = element("br");
-    			t11 = text("\r\n\t\t\t\t\t- Game Mechanics: taking away mundaneness of emotion logging by turning task into a gaming experience");
-    			br6 = element("br");
-    			t12 = text("\r\n\t\t\t\t\t- Progression: sustaining user interest through working towards goals in app");
-    			t13 = space();
-    			br7 = element("br");
-    			t14 = space();
-    			span2 = element("span");
-    			span2.textContent = "Experimental Sonification of Emotions";
-    			t16 = space();
-    			p2 = element("p");
-    			t17 = text("-Sonification of Emotions aka, Composition in the app refers to the feature that converts emotions into music.");
-    			br8 = element("br");
-    			t18 = text("\r\n\t\t\t\t\t- The idea is to allow users to 'listen/playback' their emotions so they could possibly gain insights they otherwise would not if they were to read them traditionally. ");
-    			br9 = element("br");
-    			t19 = text("\r\n\t\t\t\t\t- Data from each emotion log would be used to generate an emotion piece.");
-    			t20 = space();
-    			br10 = element("br");
-    			t21 = space();
-    			span3 = element("span");
-    			span3.textContent = "Notes";
-    			t23 = space();
-    			p3 = element("p");
-    			t24 = text("- Work in progress: Composition");
-    			br11 = element("br");
-    			t25 = text("\r\n\t\t\t\t\t- Current info is accurate as of 8 Jan 2021");
-    			attr_dev(span0, "class", "description-header");
-    			add_location(span0, file, 303, 4, 6975);
-    			add_location(br0, file, 304, 155, 7177);
-    			add_location(br1, file, 305, 160, 7343);
-    			add_location(p0, file, 304, 4, 7026);
-    			add_location(br2, file, 307, 4, 7363);
-    			attr_dev(span1, "class", "description-header");
-    			add_location(span1, file, 308, 4, 7373);
-    			add_location(br3, file, 309, 65, 7492);
-    			add_location(br4, file, 310, 55, 7553);
-    			add_location(br5, file, 311, 72, 7631);
-    			add_location(br6, file, 312, 106, 7743);
-    			add_location(p1, file, 309, 5, 7432);
-    			add_location(br7, file, 315, 5, 7848);
-    			attr_dev(span2, "class", "description-header");
-    			add_location(span2, file, 316, 4, 7858);
-    			add_location(br8, file, 317, 118, 8055);
-    			add_location(br9, file, 318, 173, 8234);
-    			add_location(p2, file, 317, 5, 7942);
-    			add_location(br10, file, 321, 4, 8334);
-    			add_location(span3, file, 322, 5, 8345);
-    			add_location(br11, file, 323, 39, 8404);
-    			add_location(p3, file, 323, 5, 8370);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, span0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, p0, anchor);
-    			append_dev(p0, t2);
-    			append_dev(p0, br0);
-    			append_dev(p0, t3);
-    			append_dev(p0, br1);
-    			insert_dev(target, t4, anchor);
-    			insert_dev(target, br2, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, span1, anchor);
-    			insert_dev(target, t7, anchor);
-    			insert_dev(target, p1, anchor);
-    			append_dev(p1, t8);
-    			append_dev(p1, br3);
-    			append_dev(p1, t9);
-    			append_dev(p1, br4);
-    			append_dev(p1, t10);
-    			append_dev(p1, br5);
-    			append_dev(p1, t11);
-    			append_dev(p1, br6);
-    			append_dev(p1, t12);
-    			insert_dev(target, t13, anchor);
-    			insert_dev(target, br7, anchor);
-    			insert_dev(target, t14, anchor);
-    			insert_dev(target, span2, anchor);
-    			insert_dev(target, t16, anchor);
-    			insert_dev(target, p2, anchor);
-    			append_dev(p2, t17);
-    			append_dev(p2, br8);
-    			append_dev(p2, t18);
-    			append_dev(p2, br9);
-    			append_dev(p2, t19);
-    			insert_dev(target, t20, anchor);
-    			insert_dev(target, br10, anchor);
-    			insert_dev(target, t21, anchor);
-    			insert_dev(target, span3, anchor);
-    			insert_dev(target, t23, anchor);
-    			insert_dev(target, p3, anchor);
-    			append_dev(p3, t24);
-    			append_dev(p3, br11);
-    			append_dev(p3, t25);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(span0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(br2);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(span1);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t13);
-    			if (detaching) detach_dev(br7);
-    			if (detaching) detach_dev(t14);
-    			if (detaching) detach_dev(span2);
-    			if (detaching) detach_dev(t16);
-    			if (detaching) detach_dev(p2);
-    			if (detaching) detach_dev(t20);
-    			if (detaching) detach_dev(br10);
-    			if (detaching) detach_dev(t21);
-    			if (detaching) detach_dev(span3);
-    			if (detaching) detach_dev(t23);
-    			if (detaching) detach_dev(p3);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_5.name,
-    		type: "if",
-    		source: "(303:3) {#if index === 0}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (328:3) {#if index === 1}
-    function create_if_block_4(ctx) {
-    	let span;
-    	let t1;
-    	let p;
-
-    	const block = {
-    		c: function create() {
-    			span = element("span");
-    			span.textContent = "Home";
-    			t1 = space();
-    			p = element("p");
-    			p.textContent = "\"They say home is where the heart is. But here, home is where your mind is.\"";
+    			input = element("input");
+    			t8 = space();
+    			hr = element("hr");
+    			t9 = space();
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 328, 3, 8505);
-    			add_location(p, file, 329, 4, 8555);
+    			add_location(span, file, 308, 4, 7180);
+    			add_location(br0, file, 309, 155, 7382);
+    			add_location(br1, file, 310, 160, 7548);
+    			add_location(p, file, 309, 4, 7231);
+    			add_location(br2, file, 312, 4, 7568);
+    			attr_dev(label, "for", "toggleShowHideCheck");
+    			add_location(label, file, 315, 1, 7631);
+    			attr_dev(input, "id", "toggleShowHideCheck");
+    			attr_dev(input, "type", "checkbox");
+    			attr_dev(input, "class", "check-box");
+    			add_location(input, file, 316, 2, 7684);
+    			add_location(hr, file, 317, 2, 7788);
+    			attr_dev(div0, "id", "blinder");
+    			add_location(div0, file, 314, 1, 7610);
+    			attr_dev(div1, "id", "right-inner-right");
+    			add_location(div1, file, 313, 4, 7578);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			append_dev(p, br1);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, div0);
+    			append_dev(div0, label);
+    			append_dev(div0, t7);
+    			append_dev(div0, input);
+    			input.checked = /*showRightInnerLeft*/ ctx[0];
+    			append_dev(div0, t8);
+    			append_dev(div0, hr);
+    			insert_dev(target, t9, anchor);
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    			current = true;
+
+    			if (!mounted) {
+    				dispose = listen_dev(input, "change", /*input_change_handler*/ ctx[29]);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty[0] & /*showRightInnerLeft*/ 1) {
+    				input.checked = /*showRightInnerLeft*/ ctx[0];
+    			}
+
+    			if (/*showRightInnerLeft*/ ctx[0] === true) {
+    				if (if_block) {
+    					if (dirty[0] & /*showRightInnerLeft*/ 1) {
+    						transition_in(if_block, 1);
+    					}
+    				} else {
+    					if_block = create_if_block_17(ctx);
+    					if_block.c();
+    					transition_in(if_block, 1);
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				group_outros();
+
+    				transition_out(if_block, 1, 1, () => {
+    					if_block = null;
+    				});
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block);
+    			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(span);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t9);
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    			mounted = false;
+    			dispose();
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4.name,
+    		id: create_if_block_16.name,
     		type: "if",
-    		source: "(328:3) {#if index === 1}",
+    		source: "(308:3) {#if index === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (333:3) {#if index === 2}
-    function create_if_block_3(ctx) {
+    // (321:2) {#if showRightInnerLeft === true}
+    function create_if_block_17(ctx) {
+    	let div;
+    	let span0;
+    	let t1;
+    	let span1;
+    	let u0;
+    	let t3;
+    	let p0;
+    	let t4;
+    	let br0;
+    	let t5;
+    	let br1;
+    	let t6;
+    	let br2;
+    	let t7;
+    	let br3;
+    	let t8;
+    	let t9;
+    	let br4;
+    	let t10;
+    	let span2;
+    	let u1;
+    	let t12;
+    	let p1;
+    	let t13;
+    	let br5;
+    	let t14;
+    	let br6;
+    	let t15;
+    	let t16;
+    	let br7;
+    	let t17;
+    	let span3;
+    	let u2;
+    	let t19;
+    	let p2;
+    	let t20;
+    	let br8;
+    	let t21;
+    	let div_transition;
+    	let current;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			span0 = element("span");
+    			span0.textContent = "Developer Notes";
+    			t1 = space();
+    			span1 = element("span");
+    			u0 = element("u");
+    			u0.textContent = "Gamification Integration";
+    			t3 = space();
+    			p0 = element("p");
+    			t4 = text("Some Gamification elements integrated in the app include:");
+    			br0 = element("br");
+    			t5 = text("\r\n\t\t\t\t\t- Narrative: create an immersive backstory/setting");
+    			br1 = element("br");
+    			t6 = text("\r\n\t\t\t\t\t- Aesthetic: an specific aesthetic of artwork for further immersion");
+    			br2 = element("br");
+    			t7 = text("\r\n\t\t\t\t\t- Game Mechanics: taking away mundaneness of emotion logging by turning task into a gaming experience");
+    			br3 = element("br");
+    			t8 = text("\r\n\t\t\t\t\t- Progression: sustaining user interest by working towards goals in app");
+    			t9 = space();
+    			br4 = element("br");
+    			t10 = space();
+    			span2 = element("span");
+    			u1 = element("u");
+    			u1.textContent = "Experimental Sonification of Emotions";
+    			t12 = space();
+    			p1 = element("p");
+    			t13 = text("-Sonification of Emotions aka, Composition in the app refers to the feature that converts emotions into music.");
+    			br5 = element("br");
+    			t14 = text("\r\n\t\t\t\t\t- The idea is to allow users to 'listen/playback' their emotions so they could possibly gain insights they otherwise would not if they were to read them traditionally. ");
+    			br6 = element("br");
+    			t15 = text("\r\n\t\t\t\t\t- Data from each emotion log would be used to generate an emotion piece.");
+    			t16 = space();
+    			br7 = element("br");
+    			t17 = space();
+    			span3 = element("span");
+    			u2 = element("u");
+    			u2.textContent = "Current Progress";
+    			t19 = space();
+    			p2 = element("p");
+    			t20 = text("- Work in progress: Composition");
+    			br8 = element("br");
+    			t21 = text("\r\n\t\t\t\t\t- Current info is accurate as of 14 Jan 2021");
+    			attr_dev(span0, "class", "description-header");
+    			add_location(span0, file, 322, 1, 7921);
+    			add_location(u0, file, 323, 8, 7986);
+    			add_location(span1, file, 323, 2, 7980);
+    			add_location(br0, file, 324, 65, 8091);
+    			add_location(br1, file, 325, 55, 8152);
+    			add_location(br2, file, 326, 72, 8230);
+    			add_location(br3, file, 327, 106, 8342);
+    			add_location(p0, file, 324, 5, 8031);
+    			add_location(br4, file, 330, 4, 8441);
+    			add_location(u1, file, 331, 8, 8455);
+    			add_location(span2, file, 331, 2, 8449);
+    			add_location(br5, file, 332, 118, 8626);
+    			add_location(br6, file, 333, 173, 8805);
+    			add_location(p1, file, 332, 5, 8513);
+    			add_location(br7, file, 336, 4, 8906);
+    			add_location(u2, file, 337, 8, 8920);
+    			add_location(span3, file, 337, 2, 8914);
+    			add_location(br8, file, 338, 39, 8991);
+    			add_location(p2, file, 338, 5, 8957);
+    			attr_dev(div, "class", "right-inner-left");
+    			add_location(div, file, 321, 1, 7850);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, span0);
+    			append_dev(div, t1);
+    			append_dev(div, span1);
+    			append_dev(span1, u0);
+    			append_dev(div, t3);
+    			append_dev(div, p0);
+    			append_dev(p0, t4);
+    			append_dev(p0, br0);
+    			append_dev(p0, t5);
+    			append_dev(p0, br1);
+    			append_dev(p0, t6);
+    			append_dev(p0, br2);
+    			append_dev(p0, t7);
+    			append_dev(p0, br3);
+    			append_dev(p0, t8);
+    			append_dev(div, t9);
+    			append_dev(div, br4);
+    			append_dev(div, t10);
+    			append_dev(div, span2);
+    			append_dev(span2, u1);
+    			append_dev(div, t12);
+    			append_dev(div, p1);
+    			append_dev(p1, t13);
+    			append_dev(p1, br5);
+    			append_dev(p1, t14);
+    			append_dev(p1, br6);
+    			append_dev(p1, t15);
+    			append_dev(div, t16);
+    			append_dev(div, br7);
+    			append_dev(div, t17);
+    			append_dev(div, span3);
+    			append_dev(span3, u2);
+    			append_dev(div, t19);
+    			append_dev(div, p2);
+    			append_dev(p2, t20);
+    			append_dev(p2, br8);
+    			append_dev(p2, t21);
+    			current = true;
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			add_render_callback(() => {
+    				if (!div_transition) div_transition = create_bidirectional_transition(div, slide, { duration: 300 }, true);
+    				div_transition.run(1);
+    			});
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			if (!div_transition) div_transition = create_bidirectional_transition(div, slide, { duration: 300 }, false);
+    			div_transition.run(0);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			if (detaching && div_transition) div_transition.end();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_17.name,
+    		type: "if",
+    		source: "(321:2) {#if showRightInnerLeft === true}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (348:3) {#if index === 1 && subNavTrack === "" || subNavTrack === "Home"}
+    function create_if_block_15(ctx) {
+    	let div;
     	let span;
     	let t1;
     	let p;
+    	let t3;
+    	let br;
+    	let t4;
+    	let img;
+    	let img_src_value;
+    	let div_intro;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			span = element("span");
+    			span.textContent = "Home";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "The Homepage of the app, where you can access to all features.";
+    			t3 = space();
+    			br = element("br");
+    			t4 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 349, 3, 9223);
+    			add_location(p, file, 350, 4, 9273);
+    			add_location(br, file, 352, 4, 9355);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/home_forever.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "homeGif");
+    			add_location(img, file, 353, 4, 9365);
+    			add_location(div, file, 348, 3, 9173);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, span);
+    			append_dev(div, t1);
+    			append_dev(div, p);
+    			append_dev(div, t3);
+    			append_dev(div, br);
+    			append_dev(div, t4);
+    			append_dev(div, img);
+    		},
+    		i: function intro(local) {
+    			if (!div_intro) {
+    				add_render_callback(() => {
+    					div_intro = create_in_transition(div, fade, { delay: 100, duration: 300 });
+    					div_intro.start();
+    				});
+    			}
+    		},
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_15.name,
+    		type: "if",
+    		source: "(348:3) {#if index === 1 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Home\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (357:4) {#if subNavTrack === "Avatar"}
+    function create_if_block_14(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let t4;
+    	let br1;
+    	let t5;
+    	let br2;
+    	let t6;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Concept: Avatar";
+    			t1 = space();
+    			p = element("p");
+    			t2 = text("In dEmoLog, you are represented as Pens.");
+    			br0 = element("br");
+    			t3 = text(" I suppose it is fitting seeing you are both the protagonist and author of your own story.");
+    			t4 = space();
+    			br1 = element("br");
+    			t5 = space();
+    			br2 = element("br");
+    			t6 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 357, 4, 9505);
+    			add_location(br0, file, 358, 48, 9610);
+    			add_location(p, file, 358, 5, 9567);
+    			add_location(br1, file, 359, 5, 9715);
+    			add_location(br2, file, 360, 5, 9726);
+    			if (img.src !== (img_src_value = "./img/pageItems/qpen.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "quillPen");
+    			add_location(img, file, 361, 5, 9737);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, br2, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(br2);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_14.name,
+    		type: "if",
+    		source: "(357:4) {#if subNavTrack === \\\"Avatar\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (365:4) {#if subNavTrack === "Inventory"}
+    function create_if_block_13(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let t4;
+    	let br1;
+    	let t5;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Inventory";
+    			t1 = space();
+    			p = element("p");
+    			t2 = text("Who doesn't like goodies? Gotta store all these loots from demon hunting someplace.");
+    			br0 = element("br");
+    			t3 = text(" Who knows? They might be useful...");
+    			t4 = space();
+    			br1 = element("br");
+    			t5 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 365, 4, 9852);
+    			add_location(br0, file, 366, 91, 10003);
+    			add_location(p, file, 366, 5, 9917);
+    			add_location(br1, file, 367, 5, 10053);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/inventory_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "inventoryGif");
+    			add_location(img, file, 368, 5, 10064);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_13.name,
+    		type: "if",
+    		source: "(365:4) {#if subNavTrack === \\\"Inventory\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (380:3) {#if index === 2 && subNavTrack === "" || subNavTrack === "Beastiary"}
+    function create_if_block_12(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let br1;
+    	let t4;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
@@ -2248,42 +2583,253 @@ var app = (function () {
     			span.textContent = "Beastiary";
     			t1 = space();
     			p = element("p");
-    			p.textContent = "\"Hey, wouldn't it be nice if there was a way to beat them? Out of sight out of mind...\"";
+    			t2 = text("The Beastiary page is where information about Demons is stored. ");
+    			br0 = element("br");
+    			t3 = space();
+    			br1 = element("br");
+    			t4 = space();
+    			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 333, 3, 8682);
-    			add_location(p, file, 334, 4, 8737);
+    			add_location(span, file, 380, 3, 10665);
+    			add_location(br0, file, 381, 71, 10787);
+    			add_location(p, file, 381, 4, 10720);
+    			add_location(br1, file, 382, 4, 10801);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/beastiary_forever.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "beastiaryGif");
+    			add_location(img, file, 383, 4, 10811);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, img, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(span);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(img);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3.name,
+    		id: create_if_block_12.name,
     		type: "if",
-    		source: "(333:3) {#if index === 2}",
+    		source: "(380:3) {#if index === 2 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Beastiary\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (338:3) {#if index === 3}
-    function create_if_block_2(ctx) {
+    // (386:4) {#if subNavTrack === "Lore"}
+    function create_if_block_11(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t3;
+    	let br;
+    	let t4;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Lore";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "Backstory of each Demons. How quaint. Were they truly monsters to begin with?";
+    			t3 = space();
+    			br = element("br");
+    			t4 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 386, 4, 10948);
+    			add_location(p, file, 387, 5, 11008);
+    			add_location(br, file, 388, 5, 11099);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/beastiary_lore_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "beastiaryLore");
+    			add_location(img, file, 389, 5, 11110);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_11.name,
+    		type: "if",
+    		source: "(386:4) {#if subNavTrack === \\\"Lore\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (392:4) {#if subNavTrack === "Select"}
+    function create_if_block_10(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t3;
+    	let br;
+    	let t4;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Select";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "Here's an interesting connection the Beastiary has, to the Mirror world; you can select which Demon you want to Vent at.";
+    			t3 = space();
+    			br = element("br");
+    			t4 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 392, 4, 11253);
+    			add_location(p, file, 393, 5, 11315);
+    			add_location(br, file, 394, 5, 11449);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/beastiary_select_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "beastiarySelect");
+    			add_location(img, file, 395, 5, 11460);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_10.name,
+    		type: "if",
+    		source: "(392:4) {#if subNavTrack === \\\"Select\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (398:4) {#if subNavTrack === "Unlock"}
+    function create_if_block_9(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t3;
+    	let br;
+    	let t4;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Unlock";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "The Beastiary might know it all but it is not omnipotent. It does however, accept offerings in exchange for new knowledge...";
+    			t3 = space();
+    			br = element("br");
+    			t4 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 398, 4, 11607);
+    			add_location(p, file, 399, 5, 11670);
+    			add_location(br, file, 400, 5, 11809);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/beastiary_unlock_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "beastiaryUnlock");
+    			add_location(img, file, 401, 5, 11820);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_9.name,
+    		type: "if",
+    		source: "(398:4) {#if subNavTrack === \\\"Unlock\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (404:3) {#if index === 3 && subNavTrack === "" || subNavTrack === "Vent"}
+    function create_if_block_8(ctx) {
     	let span;
     	let t1;
     	let p;
     	let t2;
-    	let br;
+    	let br0;
     	let t3;
+    	let br1;
+    	let t4;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
@@ -2291,26 +2837,453 @@ var app = (function () {
     			span.textContent = "Vent";
     			t1 = space();
     			p = element("p");
-    			t2 = text("\"It would seem that they can be vanquished with emotions...\"");
-    			br = element("br");
-    			t3 = text("\r\n\t\t\t\t\"Its not safe... here take these tomes, they're catalysts to manifest your emotions as ammunitions... Happy hunting!\"");
+    			t2 = text("The Vent page is where to vanquish demons.");
+    			br0 = element("br");
+    			t3 = space();
+    			br1 = element("br");
+    			t4 = space();
+    			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 338, 3, 8874);
-    			add_location(br, file, 339, 67, 8987);
-    			add_location(p, file, 339, 4, 8924);
+    			add_location(span, file, 404, 3, 12000);
+    			add_location(br0, file, 405, 49, 12095);
+    			add_location(p, file, 405, 4, 12050);
+    			add_location(br1, file, 406, 4, 12109);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/vent_forever.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "VentGif");
+    			add_location(img, file, 407, 5, 12120);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, p, anchor);
     			append_dev(p, t2);
-    			append_dev(p, br);
-    			append_dev(p, t3);
+    			append_dev(p, br0);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, img, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(span);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_8.name,
+    		type: "if",
+    		source: "(404:3) {#if index === 3 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Vent\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (410:4) {#if subNavTrack === "Emotion Tomes"}
+    function create_if_block_7(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t3;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Concept: Emotion Tomes";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "Each emotion tome is representative of an emotion. You are able to wield your emotions through them to launch devastating attacks at demons.";
+    			t3 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 410, 4, 12256);
+    			add_location(p, file, 411, 5, 12325);
+    			attr_dev(img, "width", "600px");
+    			if (img.src !== (img_src_value = "./img/pageItems/books.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "emotionTomes");
+    			add_location(img, file, 412, 5, 12479);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_7.name,
+    		type: "if",
+    		source: "(410:4) {#if subNavTrack === \\\"Emotion Tomes\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (415:4) {#if subNavTrack === "Vanquish"}
+    function create_if_block_6(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let t4;
+    	let br1;
+    	let t5;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Vanquish";
+    			t1 = space();
+    			p = element("p");
+    			t2 = text("Armed with emotion tomes, you can now damage the demon by Venting on them. ");
+    			br0 = element("br");
+    			t3 = text("\r\n\t\t\t\t\tBut remember to only use the tomes you feel most strongly about otherwise, you won't be getting much out of dEmoLog.");
+    			t4 = space();
+    			br1 = element("br");
+    			t5 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 415, 4, 12605);
+    			add_location(br0, file, 416, 83, 12747);
+    			add_location(p, file, 416, 5, 12669);
+    			add_location(br1, file, 418, 5, 12885);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/vent_vanquish_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "VentVanquish");
+    			add_location(img, file, 419, 5, 12896);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_6.name,
+    		type: "if",
+    		source: "(415:4) {#if subNavTrack === \\\"Vanquish\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (422:4) {#if subNavTrack === "Loots"}
+    function create_if_block_5(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let t4;
+    	let br1;
+    	let t5;
+    	let img0;
+    	let img0_src_value;
+    	let t6;
+    	let img1;
+    	let img1_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Loots";
+    			t1 = space();
+    			p = element("p");
+    			t2 = text("Venting at the demon will drop loots at times. These loots could be useful in the Beastiary... ");
+    			br0 = element("br");
+    			t3 = text("\r\n\t\t\t\t\tOh, and don't forget to pick them up! They do disappear over time.");
+    			t4 = space();
+    			br1 = element("br");
+    			t5 = space();
+    			img0 = element("img");
+    			t6 = space();
+    			img1 = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 422, 4, 13036);
+    			add_location(br0, file, 423, 103, 13195);
+    			add_location(p, file, 423, 5, 13097);
+    			add_location(br1, file, 425, 5, 13283);
+    			attr_dev(img0, "width", "250px");
+    			if (img0.src !== (img0_src_value = "./img/pageItems/hornFrag.png")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "hornFragment");
+    			add_location(img0, file, 426, 5, 13294);
+    			attr_dev(img1, "width", "250px");
+    			if (img1.src !== (img1_src_value = "./img/pageItems/branchFrag.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "branchFragment");
+    			add_location(img1, file, 427, 5, 13375);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, img0, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, img1, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(img0);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(img1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_5.name,
+    		type: "if",
+    		source: "(422:4) {#if subNavTrack === \\\"Loots\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (430:3) {#if index === 4 && subNavTrack === "" || subNavTrack === "Records"}
+    function create_if_block_4(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t3;
+    	let br;
+    	let t4;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Records";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "The Records page acts like an archive of sorts that allows you to look back at your past emotion logs for reflection.";
+    			t3 = space();
+    			br = element("br");
+    			t4 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 430, 3, 13542);
+    			add_location(p, file, 431, 4, 13595);
+    			add_location(br, file, 432, 4, 13725);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/record_forever.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "recordGif");
+    			add_location(img, file, 433, 5, 13736);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_4.name,
+    		type: "if",
+    		source: "(430:3) {#if index === 4 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Records\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (436:4) {#if subNavTrack === "Calendar"}
+    function create_if_block_3(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let t4;
+    	let br1;
+    	let t5;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Calendar";
+    			t1 = space();
+    			p = element("p");
+    			t2 = text("You can browse through the calendar to look back at your Vent records.");
+    			br0 = element("br");
+    			t3 = text("\r\n\t\t\t\t\t Man... I guess I was feeling sad the other day. Huh. How curious.");
+    			t4 = space();
+    			br1 = element("br");
+    			t5 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 436, 4, 13871);
+    			add_location(br0, file, 437, 78, 14008);
+    			add_location(p, file, 437, 5, 13935);
+    			add_location(br1, file, 439, 6, 14098);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/record_calendar_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "recordCalendar");
+    			add_location(img, file, 440, 5, 14109);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(img);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_3.name,
+    		type: "if",
+    		source: "(436:4) {#if subNavTrack === \\\"Calendar\\\"}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (443:4) {#if subNavTrack === "Notes"}
+    function create_if_block_2(ctx) {
+    	let span;
+    	let t1;
+    	let p;
+    	let t2;
+    	let br0;
+    	let t3;
+    	let t4;
+    	let br1;
+    	let t5;
+    	let img;
+    	let img_src_value;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			span.textContent = "Feature: Notes";
+    			t1 = space();
+    			p = element("p");
+    			t2 = text("It might be prudent to edit/append a short note to describe anything else that happened then. ");
+    			br0 = element("br");
+    			t3 = text("\r\n\t\t\t\t\tI can't believe seeing that stranger shouting far away still made me feel so anxious...");
+    			t4 = space();
+    			br1 = element("br");
+    			t5 = space();
+    			img = element("img");
+    			attr_dev(span, "class", "description-header");
+    			add_location(span, file, 443, 4, 14253);
+    			add_location(br0, file, 444, 102, 14411);
+    			add_location(p, file, 444, 5, 14314);
+    			add_location(br1, file, 446, 5, 14520);
+    			attr_dev(img, "class", "gifHolder");
+    			if (img.src !== (img_src_value = "./img/pageItems/record_edit_once.gif")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "recordEdit");
+    			add_location(img, file, 447, 5, 14531);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t2);
+    			append_dev(p, br0);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, img, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(img);
     		}
     	};
 
@@ -2318,14 +3291,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(338:3) {#if index === 3}",
+    		source: "(443:4) {#if subNavTrack === \\\"Notes\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (344:3) {#if index === 4}
+    // (450:3) {#if index === 5 && subNavTrack === "" || subNavTrack === "Composition"}
     function create_if_block_1(ctx) {
     	let span;
     	let t1;
@@ -2334,13 +3307,13 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			span = element("span");
-    			span.textContent = "Records";
+    			span.textContent = "Composition";
     			t1 = space();
     			p = element("p");
-    			p.textContent = "\"Perhaps logging these emotions every instance I vent would allow me to recall what happened and be more efficient...\"";
+    			p.textContent = "\"Recall? Can I recall? Did you know, some people say that music triggers memories.\"";
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 344, 3, 9161);
-    			add_location(p, file, 345, 4, 9214);
+    			add_location(span, file, 450, 3, 14708);
+    			add_location(p, file, 451, 4, 14765);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2358,14 +3331,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(344:3) {#if index === 4}",
+    		source: "(450:3) {#if index === 5 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Composition\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (349:3) {#if index === 5}
+    // (454:4) {#if subNavTrack === "-WIP-"}
     function create_if_block(ctx) {
     	let span;
     	let t1;
@@ -2374,13 +3347,13 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			span = element("span");
-    			span.textContent = "Composition";
+    			span.textContent = "Work IN progress";
     			t1 = space();
     			p = element("p");
-    			p.textContent = "\"Recall? Can I recall? Did you know, some people say music\"";
+    			p.textContent = "\"test\"";
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 349, 3, 9382);
-    			add_location(p, file, 350, 4, 9439);
+    			add_location(span, file, 454, 4, 14906);
+    			add_location(p, file, 455, 5, 14969);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2398,7 +3371,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(349:3) {#if index === 5}",
+    		source: "(454:4) {#if subNavTrack === \\\"-WIP-\\\"}",
     		ctx
     	});
 
@@ -2443,27 +3416,49 @@ var app = (function () {
     	let t12;
     	let t13;
     	let t14;
+    	let t15;
+    	let t16;
+    	let t17;
+    	let t18;
+    	let t19;
+    	let t20;
+    	let t21;
+    	let t22;
+    	let t23;
+    	let t24;
+    	let t25;
     	let footer;
     	let span;
-    	let t16;
+    	let t27;
     	let br1;
-    	let t17;
+    	let t28;
     	let p1;
-    	let t18;
+    	let t29;
     	let a;
     	let current;
     	let mounted;
     	let dispose;
-    	let if_block0 = /*help*/ ctx[1] === true && create_if_block_12(ctx);
+    	let if_block0 = /*help*/ ctx[1] === true && create_if_block_24(ctx);
     	let key_block0 = create_key_block_1(ctx);
     	let key_block1 = create_key_block(ctx);
-    	let if_block1 = /*index*/ ctx[2] != 0 && create_if_block_6(ctx);
-    	let if_block2 = /*index*/ ctx[2] === 0 && create_if_block_5(ctx);
-    	let if_block3 = /*index*/ ctx[2] === 1 && create_if_block_4(ctx);
-    	let if_block4 = /*index*/ ctx[2] === 2 && create_if_block_3(ctx);
-    	let if_block5 = /*index*/ ctx[2] === 3 && create_if_block_2(ctx);
-    	let if_block6 = /*index*/ ctx[2] === 4 && create_if_block_1(ctx);
-    	let if_block7 = /*index*/ ctx[2] === 5 && create_if_block(ctx);
+    	let if_block1 = /*index*/ ctx[2] != 0 && create_if_block_18(ctx);
+    	let if_block2 = /*index*/ ctx[2] === 0 && create_if_block_16(ctx);
+    	let if_block3 = (/*index*/ ctx[2] === 1 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Home") && create_if_block_15(ctx);
+    	let if_block4 = /*subNavTrack*/ ctx[5] === "Avatar" && create_if_block_14(ctx);
+    	let if_block5 = /*subNavTrack*/ ctx[5] === "Inventory" && create_if_block_13(ctx);
+    	let if_block6 = (/*index*/ ctx[2] === 2 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Beastiary") && create_if_block_12(ctx);
+    	let if_block7 = /*subNavTrack*/ ctx[5] === "Lore" && create_if_block_11(ctx);
+    	let if_block8 = /*subNavTrack*/ ctx[5] === "Select" && create_if_block_10(ctx);
+    	let if_block9 = /*subNavTrack*/ ctx[5] === "Unlock" && create_if_block_9(ctx);
+    	let if_block10 = (/*index*/ ctx[2] === 3 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Vent") && create_if_block_8(ctx);
+    	let if_block11 = /*subNavTrack*/ ctx[5] === "Emotion Tomes" && create_if_block_7(ctx);
+    	let if_block12 = /*subNavTrack*/ ctx[5] === "Vanquish" && create_if_block_6(ctx);
+    	let if_block13 = /*subNavTrack*/ ctx[5] === "Loots" && create_if_block_5(ctx);
+    	let if_block14 = (/*index*/ ctx[2] === 4 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Records") && create_if_block_4(ctx);
+    	let if_block15 = /*subNavTrack*/ ctx[5] === "Calendar" && create_if_block_3(ctx);
+    	let if_block16 = /*subNavTrack*/ ctx[5] === "Notes" && create_if_block_2(ctx);
+    	let if_block17 = (/*index*/ ctx[2] === 5 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Composition") && create_if_block_1(ctx);
+    	let if_block18 = /*subNavTrack*/ ctx[5] === "-WIP-" && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
@@ -2511,60 +3506,82 @@ var app = (function () {
     			t13 = space();
     			if (if_block7) if_block7.c();
     			t14 = space();
+    			if (if_block8) if_block8.c();
+    			t15 = space();
+    			if (if_block9) if_block9.c();
+    			t16 = space();
+    			if (if_block10) if_block10.c();
+    			t17 = space();
+    			if (if_block11) if_block11.c();
+    			t18 = space();
+    			if (if_block12) if_block12.c();
+    			t19 = space();
+    			if (if_block13) if_block13.c();
+    			t20 = space();
+    			if (if_block14) if_block14.c();
+    			t21 = space();
+    			if (if_block15) if_block15.c();
+    			t22 = space();
+    			if (if_block16) if_block16.c();
+    			t23 = space();
+    			if (if_block17) if_block17.c();
+    			t24 = space();
+    			if (if_block18) if_block18.c();
+    			t25 = space();
     			footer = element("footer");
     			span = element("span");
     			span.textContent = "dEmoLog";
-    			t16 = space();
+    			t27 = space();
     			br1 = element("br");
-    			t17 = space();
+    			t28 = space();
     			p1 = element("p");
-    			t18 = text("created by ");
+    			t29 = text("created by ");
     			a = element("a");
     			a.textContent = "5v1n0";
     			attr_dev(button, "id", "tutBtn");
-    			add_location(button, file, 178, 5, 3865);
-    			add_location(p0, file, 178, 2, 3862);
+    			add_location(button, file, 183, 5, 4070);
+    			add_location(p0, file, 183, 2, 4067);
     			attr_dev(div0, "id", "help");
-    			add_location(div0, file, 177, 2, 3843);
+    			add_location(div0, file, 182, 2, 4048);
     			attr_dev(td0, "colspan", "3");
     			attr_dev(td0, "class", "fixedImgHolder");
-    			add_location(td0, file, 213, 3, 4775);
-    			add_location(tr0, file, 212, 3, 4766);
+    			add_location(td0, file, 218, 3, 4980);
+    			add_location(tr0, file, 217, 3, 4971);
     			attr_dev(img0, "id", "sliderBtn");
     			if (img0.src !== (img0_src_value = "./img/UI/arrow_L.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "leftArrow");
-    			add_location(img0, file, 220, 7, 4999);
-    			add_location(td1, file, 220, 3, 4995);
-    			add_location(td2, file, 221, 4, 5115);
+    			add_location(img0, file, 225, 7, 5204);
+    			add_location(td1, file, 225, 3, 5200);
+    			add_location(td2, file, 226, 4, 5320);
     			attr_dev(img1, "id", "sliderBtn");
     			if (img1.src !== (img1_src_value = "./img/UI/arrow_R.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "rightArrow");
-    			add_location(img1, file, 225, 7, 5256);
-    			add_location(td3, file, 225, 3, 5252);
+    			add_location(img1, file, 230, 7, 5461);
+    			add_location(td3, file, 230, 3, 5457);
     			attr_dev(tr1, "class", "fixedLabelHolder");
-    			add_location(tr1, file, 219, 3, 4961);
-    			add_location(table, file, 211, 3, 4754);
-    			add_location(br0, file, 229, 3, 5401);
+    			add_location(tr1, file, 224, 3, 5166);
+    			add_location(table, file, 216, 3, 4959);
+    			add_location(br0, file, 234, 3, 5606);
     			attr_dev(div1, "id", "scroller");
-    			add_location(div1, file, 209, 3, 4725);
+    			add_location(div1, file, 214, 3, 4930);
     			attr_dev(div2, "class", "COF-wheel");
-    			add_location(div2, file, 176, 2, 3816);
+    			add_location(div2, file, 181, 2, 4021);
     			attr_dev(div3, "class", "introBox");
-    			add_location(div3, file, 301, 3, 6925);
+    			add_location(div3, file, 306, 3, 7130);
     			attr_dev(div4, "class", "song-detail");
-    			add_location(div4, file, 237, 2, 5473);
+    			add_location(div4, file, 242, 2, 5678);
     			attr_dev(div5, "class", "mini-container");
-    			add_location(div5, file, 175, 1, 3784);
+    			add_location(div5, file, 180, 1, 3989);
     			attr_dev(div6, "class", "container");
-    			add_location(div6, file, 174, 0, 3758);
-    			attr_dev(span, "id", "home");
-    			add_location(span, file, 361, 2, 9603);
-    			add_location(br1, file, 362, 2, 9667);
+    			add_location(div6, file, 179, 0, 3963);
+    			attr_dev(span, "id", "dEmoLog");
+    			add_location(span, file, 465, 2, 15075);
+    			add_location(br1, file, 466, 2, 15138);
     			attr_dev(a, "href", "https://github.com/5v1n0");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file, 363, 16, 9689);
-    			add_location(p1, file, 363, 2, 9675);
-    			add_location(footer, file, 360, 1, 9591);
+    			add_location(a, file, 467, 16, 15160);
+    			add_location(p1, file, 467, 2, 15146);
+    			add_location(footer, file, 464, 1, 15063);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2612,23 +3629,45 @@ var app = (function () {
     			if (if_block6) if_block6.m(div3, null);
     			append_dev(div3, t13);
     			if (if_block7) if_block7.m(div3, null);
-    			insert_dev(target, t14, anchor);
+    			append_dev(div3, t14);
+    			if (if_block8) if_block8.m(div3, null);
+    			append_dev(div3, t15);
+    			if (if_block9) if_block9.m(div3, null);
+    			append_dev(div3, t16);
+    			if (if_block10) if_block10.m(div3, null);
+    			append_dev(div3, t17);
+    			if (if_block11) if_block11.m(div3, null);
+    			append_dev(div3, t18);
+    			if (if_block12) if_block12.m(div3, null);
+    			append_dev(div3, t19);
+    			if (if_block13) if_block13.m(div3, null);
+    			append_dev(div3, t20);
+    			if (if_block14) if_block14.m(div3, null);
+    			append_dev(div3, t21);
+    			if (if_block15) if_block15.m(div3, null);
+    			append_dev(div3, t22);
+    			if (if_block16) if_block16.m(div3, null);
+    			append_dev(div3, t23);
+    			if (if_block17) if_block17.m(div3, null);
+    			append_dev(div3, t24);
+    			if (if_block18) if_block18.m(div3, null);
+    			insert_dev(target, t25, anchor);
     			insert_dev(target, footer, anchor);
     			append_dev(footer, span);
-    			append_dev(footer, t16);
+    			append_dev(footer, t27);
     			append_dev(footer, br1);
-    			append_dev(footer, t17);
+    			append_dev(footer, t28);
     			append_dev(footer, p1);
-    			append_dev(p1, t18);
+    			append_dev(p1, t29);
     			append_dev(p1, a);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button, "click", /*click_handler*/ ctx[14], false, false, false),
-    					listen_dev(img0, "click", /*click_handler_7*/ ctx[21], false, false, false),
-    					listen_dev(img1, "click", /*click_handler_8*/ ctx[22], false, false, false),
-    					listen_dev(span, "click", /*click_handler_14*/ ctx[28], false, false, false)
+    					listen_dev(button, "click", /*click_handler*/ ctx[15], false, false, false),
+    					listen_dev(img0, "click", /*click_handler_7*/ ctx[22], false, false, false),
+    					listen_dev(img1, "click", /*click_handler_8*/ ctx[23], false, false, false),
+    					listen_dev(span, "click", /*click_handler_14*/ ctx[30], false, false, false)
     				];
 
     				mounted = true;
@@ -2643,7 +3682,7 @@ var app = (function () {
     						transition_in(if_block0, 1);
     					}
     				} else {
-    					if_block0 = create_if_block_12(ctx);
+    					if_block0 = create_if_block_24(ctx);
     					if_block0.c();
     					transition_in(if_block0, 1);
     					if_block0.m(div0, null);
@@ -2686,7 +3725,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_6(ctx);
+    					if_block1 = create_if_block_18(ctx);
     					if_block1.c();
     					if_block1.m(div4, t8);
     				}
@@ -2696,20 +3735,37 @@ var app = (function () {
     			}
 
     			if (/*index*/ ctx[2] === 0) {
-    				if (if_block2) ; else {
-    					if_block2 = create_if_block_5(ctx);
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
+
+    					if (dirty[0] & /*index*/ 4) {
+    						transition_in(if_block2, 1);
+    					}
+    				} else {
+    					if_block2 = create_if_block_16(ctx);
     					if_block2.c();
+    					transition_in(if_block2, 1);
     					if_block2.m(div3, t9);
     				}
     			} else if (if_block2) {
-    				if_block2.d(1);
-    				if_block2 = null;
+    				group_outros();
+
+    				transition_out(if_block2, 1, 1, () => {
+    					if_block2 = null;
+    				});
+
+    				check_outros();
     			}
 
-    			if (/*index*/ ctx[2] === 1) {
-    				if (if_block3) ; else {
-    					if_block3 = create_if_block_4(ctx);
+    			if (/*index*/ ctx[2] === 1 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Home") {
+    				if (if_block3) {
+    					if (dirty[0] & /*index, subNavTrack*/ 36) {
+    						transition_in(if_block3, 1);
+    					}
+    				} else {
+    					if_block3 = create_if_block_15(ctx);
     					if_block3.c();
+    					transition_in(if_block3, 1);
     					if_block3.m(div3, t10);
     				}
     			} else if (if_block3) {
@@ -2717,9 +3773,9 @@ var app = (function () {
     				if_block3 = null;
     			}
 
-    			if (/*index*/ ctx[2] === 2) {
+    			if (/*subNavTrack*/ ctx[5] === "Avatar") {
     				if (if_block4) ; else {
-    					if_block4 = create_if_block_3(ctx);
+    					if_block4 = create_if_block_14(ctx);
     					if_block4.c();
     					if_block4.m(div3, t11);
     				}
@@ -2728,9 +3784,9 @@ var app = (function () {
     				if_block4 = null;
     			}
 
-    			if (/*index*/ ctx[2] === 3) {
+    			if (/*subNavTrack*/ ctx[5] === "Inventory") {
     				if (if_block5) ; else {
-    					if_block5 = create_if_block_2(ctx);
+    					if_block5 = create_if_block_13(ctx);
     					if_block5.c();
     					if_block5.m(div3, t12);
     				}
@@ -2739,9 +3795,9 @@ var app = (function () {
     				if_block5 = null;
     			}
 
-    			if (/*index*/ ctx[2] === 4) {
+    			if (/*index*/ ctx[2] === 2 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Beastiary") {
     				if (if_block6) ; else {
-    					if_block6 = create_if_block_1(ctx);
+    					if_block6 = create_if_block_12(ctx);
     					if_block6.c();
     					if_block6.m(div3, t13);
     				}
@@ -2750,15 +3806,136 @@ var app = (function () {
     				if_block6 = null;
     			}
 
-    			if (/*index*/ ctx[2] === 5) {
+    			if (/*subNavTrack*/ ctx[5] === "Lore") {
     				if (if_block7) ; else {
-    					if_block7 = create_if_block(ctx);
+    					if_block7 = create_if_block_11(ctx);
     					if_block7.c();
-    					if_block7.m(div3, null);
+    					if_block7.m(div3, t14);
     				}
     			} else if (if_block7) {
     				if_block7.d(1);
     				if_block7 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Select") {
+    				if (if_block8) ; else {
+    					if_block8 = create_if_block_10(ctx);
+    					if_block8.c();
+    					if_block8.m(div3, t15);
+    				}
+    			} else if (if_block8) {
+    				if_block8.d(1);
+    				if_block8 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Unlock") {
+    				if (if_block9) ; else {
+    					if_block9 = create_if_block_9(ctx);
+    					if_block9.c();
+    					if_block9.m(div3, t16);
+    				}
+    			} else if (if_block9) {
+    				if_block9.d(1);
+    				if_block9 = null;
+    			}
+
+    			if (/*index*/ ctx[2] === 3 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Vent") {
+    				if (if_block10) ; else {
+    					if_block10 = create_if_block_8(ctx);
+    					if_block10.c();
+    					if_block10.m(div3, t17);
+    				}
+    			} else if (if_block10) {
+    				if_block10.d(1);
+    				if_block10 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Emotion Tomes") {
+    				if (if_block11) ; else {
+    					if_block11 = create_if_block_7(ctx);
+    					if_block11.c();
+    					if_block11.m(div3, t18);
+    				}
+    			} else if (if_block11) {
+    				if_block11.d(1);
+    				if_block11 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Vanquish") {
+    				if (if_block12) ; else {
+    					if_block12 = create_if_block_6(ctx);
+    					if_block12.c();
+    					if_block12.m(div3, t19);
+    				}
+    			} else if (if_block12) {
+    				if_block12.d(1);
+    				if_block12 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Loots") {
+    				if (if_block13) ; else {
+    					if_block13 = create_if_block_5(ctx);
+    					if_block13.c();
+    					if_block13.m(div3, t20);
+    				}
+    			} else if (if_block13) {
+    				if_block13.d(1);
+    				if_block13 = null;
+    			}
+
+    			if (/*index*/ ctx[2] === 4 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Records") {
+    				if (if_block14) ; else {
+    					if_block14 = create_if_block_4(ctx);
+    					if_block14.c();
+    					if_block14.m(div3, t21);
+    				}
+    			} else if (if_block14) {
+    				if_block14.d(1);
+    				if_block14 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Calendar") {
+    				if (if_block15) ; else {
+    					if_block15 = create_if_block_3(ctx);
+    					if_block15.c();
+    					if_block15.m(div3, t22);
+    				}
+    			} else if (if_block15) {
+    				if_block15.d(1);
+    				if_block15 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "Notes") {
+    				if (if_block16) ; else {
+    					if_block16 = create_if_block_2(ctx);
+    					if_block16.c();
+    					if_block16.m(div3, t23);
+    				}
+    			} else if (if_block16) {
+    				if_block16.d(1);
+    				if_block16 = null;
+    			}
+
+    			if (/*index*/ ctx[2] === 5 && /*subNavTrack*/ ctx[5] === "" || /*subNavTrack*/ ctx[5] === "Composition") {
+    				if (if_block17) ; else {
+    					if_block17 = create_if_block_1(ctx);
+    					if_block17.c();
+    					if_block17.m(div3, t24);
+    				}
+    			} else if (if_block17) {
+    				if_block17.d(1);
+    				if_block17 = null;
+    			}
+
+    			if (/*subNavTrack*/ ctx[5] === "-WIP-") {
+    				if (if_block18) ; else {
+    					if_block18 = create_if_block(ctx);
+    					if_block18.c();
+    					if_block18.m(div3, null);
+    				}
+    			} else if (if_block18) {
+    				if_block18.d(1);
+    				if_block18 = null;
     			}
     		},
     		i: function intro(local) {
@@ -2766,12 +3943,15 @@ var app = (function () {
     			transition_in(if_block0);
     			transition_in(key_block0);
     			transition_in(key_block1);
+    			transition_in(if_block2);
+    			transition_in(if_block3);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(if_block0);
     			transition_out(key_block0);
     			transition_out(key_block1);
+    			transition_out(if_block2);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -2786,7 +3966,18 @@ var app = (function () {
     			if (if_block5) if_block5.d();
     			if (if_block6) if_block6.d();
     			if (if_block7) if_block7.d();
-    			if (detaching) detach_dev(t14);
+    			if (if_block8) if_block8.d();
+    			if (if_block9) if_block9.d();
+    			if (if_block10) if_block10.d();
+    			if (if_block11) if_block11.d();
+    			if (if_block12) if_block12.d();
+    			if (if_block13) if_block13.d();
+    			if (if_block14) if_block14.d();
+    			if (if_block15) if_block15.d();
+    			if (if_block16) if_block16.d();
+    			if (if_block17) if_block17.d();
+    			if (if_block18) if_block18.d();
+    			if (detaching) detach_dev(t25);
     			if (detaching) detach_dev(footer);
     			mounted = false;
     			run_all(dispose);
@@ -2825,7 +4016,7 @@ var app = (function () {
     	let showSongs = false;
     	let showSwatch = false;
     	let showOverheadChords = false;
-    	let showRightInnerLeft = true;
+    	let showRightInnerLeft = false;
     	let error = false;
     	let intro = true;
     	let help = false;
@@ -2835,11 +4026,12 @@ var app = (function () {
     	let max = 5; // how many pages there are
     	let navImg = "./img/UI/pg" + index + ".png";
     	let navLabel = "dEmoLog";
-    	let HomeArr = ["Avatar", "Inventory", "Grimoire"];
-    	let BeastArr = ["Lore", "Select", "Unlock"];
-    	let VentArr = ["Emotion Tomes", "Vanquish", "Loots"];
-    	let RecordsArr = ["Calendar"];
-    	let CompArr = ["-WIP-"];
+    	let subNavTrack = "";
+    	let HomeArr = ["Home", "Avatar", "Inventory"];
+    	let BeastArr = ["Beastiary", "Lore", "Select", "Unlock"];
+    	let VentArr = ["Vent", "Emotion Tomes", "Loots", "Vanquish"];
+    	let RecordsArr = ["Records", "Calendar", "Notes"];
+    	let CompArr = ["Composition", "-WIP-"];
 
     	function toggleTutorial() {
     		toggleGif = 0;
@@ -2871,10 +4063,12 @@ var app = (function () {
     				$$invalidate(2, index = max);
     				$$invalidate(3, navImg = "./img/UI/pg" + index + ".png");
     				scrollLabel(index);
+    				$$invalidate(5, subNavTrack = "");
     			} else {
     				$$invalidate(2, index = currentIndex - 1);
     				$$invalidate(3, navImg = "./img/UI/pg" + index + ".png");
     				scrollLabel(index);
+    				$$invalidate(5, subNavTrack = "");
     			}
     		}
 
@@ -2883,10 +4077,12 @@ var app = (function () {
     				$$invalidate(2, index = 0);
     				$$invalidate(3, navImg = "./img/UI/pg" + index + ".png");
     				scrollLabel(index);
+    				$$invalidate(5, subNavTrack = "");
     			} else {
     				$$invalidate(2, index = currentIndex + 1);
     				$$invalidate(3, navImg = "./img/UI/pg" + index + ".png");
     				scrollLabel(index);
+    				$$invalidate(5, subNavTrack = "");
     			}
     		}
     	}
@@ -2921,6 +4117,7 @@ var app = (function () {
     		scrollLabel(page);
     		$$invalidate(3, navImg = "./img/UI/pg" + page + ".png");
     		$$invalidate(2, index = page);
+    		$$invalidate(5, subNavTrack = "");
     	}
 
     	let aHistory = "";
@@ -2941,6 +4138,8 @@ var app = (function () {
     			aCurrent.style.background = "#f6f6f6"; // 
     			aHistory = aCurrent;
     		}
+
+    		$$invalidate(5, subNavTrack = subNav);
     	}
 
     	const writable_props = [];
@@ -2964,9 +4163,12 @@ var app = (function () {
     	const click_handler_12 = (subNav, i) => handleSubNav(subNav, i);
     	const click_handler_13 = (subNav, i) => handleSubNav(subNav, i);
 
-    	const click_handler_14 = () => {
-    		$$invalidate(0, intro = true);
-    	};
+    	function input_change_handler() {
+    		showRightInnerLeft = this.checked;
+    		$$invalidate(0, showRightInnerLeft);
+    	}
+
+    	const click_handler_14 = () => altNav(0);
 
     	$$self.$capture_state = () => ({
     		fade,
@@ -2995,6 +4197,7 @@ var app = (function () {
     		max,
     		navImg,
     		navLabel,
+    		subNavTrack,
     		HomeArr,
     		BeastArr,
     		VentArr,
@@ -3020,9 +4223,9 @@ var app = (function () {
     		if ("showSongs" in $$props) showSongs = $$props.showSongs;
     		if ("showSwatch" in $$props) showSwatch = $$props.showSwatch;
     		if ("showOverheadChords" in $$props) showOverheadChords = $$props.showOverheadChords;
-    		if ("showRightInnerLeft" in $$props) showRightInnerLeft = $$props.showRightInnerLeft;
+    		if ("showRightInnerLeft" in $$props) $$invalidate(0, showRightInnerLeft = $$props.showRightInnerLeft);
     		if ("error" in $$props) error = $$props.error;
-    		if ("intro" in $$props) $$invalidate(0, intro = $$props.intro);
+    		if ("intro" in $$props) intro = $$props.intro;
     		if ("help" in $$props) $$invalidate(1, help = $$props.help);
     		if ("readyToNodeWheel" in $$props) readyToNodeWheel = $$props.readyToNodeWheel;
     		if ("loadedCoords" in $$props) loadedCoords = $$props.loadedCoords;
@@ -3030,11 +4233,12 @@ var app = (function () {
     		if ("max" in $$props) max = $$props.max;
     		if ("navImg" in $$props) $$invalidate(3, navImg = $$props.navImg);
     		if ("navLabel" in $$props) $$invalidate(4, navLabel = $$props.navLabel);
-    		if ("HomeArr" in $$props) $$invalidate(5, HomeArr = $$props.HomeArr);
-    		if ("BeastArr" in $$props) $$invalidate(6, BeastArr = $$props.BeastArr);
-    		if ("VentArr" in $$props) $$invalidate(7, VentArr = $$props.VentArr);
-    		if ("RecordsArr" in $$props) $$invalidate(8, RecordsArr = $$props.RecordsArr);
-    		if ("CompArr" in $$props) $$invalidate(9, CompArr = $$props.CompArr);
+    		if ("subNavTrack" in $$props) $$invalidate(5, subNavTrack = $$props.subNavTrack);
+    		if ("HomeArr" in $$props) $$invalidate(6, HomeArr = $$props.HomeArr);
+    		if ("BeastArr" in $$props) $$invalidate(7, BeastArr = $$props.BeastArr);
+    		if ("VentArr" in $$props) $$invalidate(8, VentArr = $$props.VentArr);
+    		if ("RecordsArr" in $$props) $$invalidate(9, RecordsArr = $$props.RecordsArr);
+    		if ("CompArr" in $$props) $$invalidate(10, CompArr = $$props.CompArr);
     		if ("toggleGif" in $$props) toggleGif = $$props.toggleGif;
     		if ("currTut" in $$props) currTut = $$props.currTut;
     		if ("aHistory" in $$props) aHistory = $$props.aHistory;
@@ -3046,11 +4250,12 @@ var app = (function () {
     	}
 
     	return [
-    		intro,
+    		showRightInnerLeft,
     		help,
     		index,
     		navImg,
     		navLabel,
+    		subNavTrack,
     		HomeArr,
     		BeastArr,
     		VentArr,
@@ -3074,6 +4279,7 @@ var app = (function () {
     		click_handler_11,
     		click_handler_12,
     		click_handler_13,
+    		input_change_handler,
     		click_handler_14
     	];
     }
