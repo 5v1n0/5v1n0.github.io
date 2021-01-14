@@ -357,7 +357,7 @@ let aHistory =""
 			{#if index === 1 && subNavTrack === "" || subNavTrack === "Home"}
 			<div in:fade="{{delay:100 , duration: 300}}">
 			<span class="description-header">Home</span>
-				<p>The Homepage of the app, where you can access to all features. 
+				<p>The Homepage of the app, where you can access all features. 
 				</p>
 				<br>
 				<img class="gifHolder" src="./img/pageItems/home_forever.gif" alt="homeGif"/>

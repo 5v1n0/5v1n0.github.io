@@ -2449,7 +2449,7 @@ var app = (function () {
     			span.textContent = "Home";
     			t1 = space();
     			p = element("p");
-    			p.textContent = "The Homepage of the app, where you can access to all features.";
+    			p.textContent = "The Homepage of the app, where you can access all features.";
     			t3 = space();
     			br = element("br");
     			t4 = space();
@@ -2457,11 +2457,11 @@ var app = (function () {
     			attr_dev(span, "class", "description-header");
     			add_location(span, file, 358, 3, 9699);
     			add_location(p, file, 359, 4, 9749);
-    			add_location(br, file, 361, 4, 9831);
+    			add_location(br, file, 361, 4, 9828);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/home_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "homeGif");
-    			add_location(img, file, 362, 4, 9841);
+    			add_location(img, file, 362, 4, 9838);
     			add_location(div, file, 357, 3, 9649);
     		},
     		m: function mount(target, anchor) {
@@ -2531,14 +2531,14 @@ var app = (function () {
     			t6 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 366, 4, 9981);
-    			add_location(br0, file, 367, 48, 10086);
-    			add_location(p, file, 367, 5, 10043);
-    			add_location(br1, file, 368, 5, 10191);
-    			add_location(br2, file, 369, 5, 10202);
+    			add_location(span, file, 366, 4, 9978);
+    			add_location(br0, file, 367, 48, 10083);
+    			add_location(p, file, 367, 5, 10040);
+    			add_location(br1, file, 368, 5, 10188);
+    			add_location(br2, file, 369, 5, 10199);
     			if (img.src !== (img_src_value = "./img/pageItems/qpen.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "quillPen");
-    			add_location(img, file, 370, 5, 10213);
+    			add_location(img, file, 370, 5, 10210);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2606,14 +2606,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 374, 4, 10328);
-    			add_location(br0, file, 375, 91, 10479);
-    			add_location(p, file, 375, 5, 10393);
-    			add_location(br1, file, 376, 5, 10529);
+    			add_location(span, file, 374, 4, 10325);
+    			add_location(br0, file, 375, 91, 10476);
+    			add_location(p, file, 375, 5, 10390);
+    			add_location(br1, file, 376, 5, 10526);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/inventory_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "inventoryGif");
-    			add_location(img, file, 377, 5, 10540);
+    			add_location(img, file, 377, 5, 10537);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2675,14 +2675,14 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 389, 3, 11141);
-    			add_location(br0, file, 390, 71, 11263);
-    			add_location(p, file, 390, 4, 11196);
-    			add_location(br1, file, 391, 4, 11277);
+    			add_location(span, file, 389, 3, 11138);
+    			add_location(br0, file, 390, 71, 11260);
+    			add_location(p, file, 390, 4, 11193);
+    			add_location(br1, file, 391, 4, 11274);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiaryGif");
-    			add_location(img, file, 392, 4, 11287);
+    			add_location(img, file, 392, 4, 11284);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2740,13 +2740,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 395, 4, 11424);
-    			add_location(p, file, 396, 5, 11484);
-    			add_location(br, file, 397, 5, 11575);
+    			add_location(span, file, 395, 4, 11421);
+    			add_location(p, file, 396, 5, 11481);
+    			add_location(br, file, 397, 5, 11572);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_lore_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiaryLore");
-    			add_location(img, file, 398, 5, 11586);
+    			add_location(img, file, 398, 5, 11583);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2802,13 +2802,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 401, 4, 11729);
-    			add_location(p, file, 402, 5, 11791);
-    			add_location(br, file, 403, 5, 11925);
+    			add_location(span, file, 401, 4, 11726);
+    			add_location(p, file, 402, 5, 11788);
+    			add_location(br, file, 403, 5, 11922);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_select_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiarySelect");
-    			add_location(img, file, 404, 5, 11936);
+    			add_location(img, file, 404, 5, 11933);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2864,13 +2864,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 407, 4, 12083);
-    			add_location(p, file, 408, 5, 12146);
-    			add_location(br, file, 409, 5, 12285);
+    			add_location(span, file, 407, 4, 12080);
+    			add_location(p, file, 408, 5, 12143);
+    			add_location(br, file, 409, 5, 12282);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_unlock_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiaryUnlock");
-    			add_location(img, file, 410, 5, 12296);
+    			add_location(img, file, 410, 5, 12293);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2929,14 +2929,14 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 413, 3, 12476);
-    			add_location(br0, file, 414, 49, 12571);
-    			add_location(p, file, 414, 4, 12526);
-    			add_location(br1, file, 415, 4, 12585);
+    			add_location(span, file, 413, 3, 12473);
+    			add_location(br0, file, 414, 49, 12568);
+    			add_location(p, file, 414, 4, 12523);
+    			add_location(br1, file, 415, 4, 12582);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/vent_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "VentGif");
-    			add_location(img, file, 416, 5, 12596);
+    			add_location(img, file, 416, 5, 12593);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2990,12 +2990,12 @@ var app = (function () {
     			t3 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 419, 4, 12732);
-    			add_location(p, file, 420, 5, 12801);
+    			add_location(span, file, 419, 4, 12729);
+    			add_location(p, file, 420, 5, 12798);
     			attr_dev(img, "width", "600px");
     			if (img.src !== (img_src_value = "./img/pageItems/books.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "emotionTomes");
-    			add_location(img, file, 421, 5, 12955);
+    			add_location(img, file, 421, 5, 12952);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3052,14 +3052,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 424, 4, 13081);
-    			add_location(br0, file, 425, 83, 13223);
-    			add_location(p, file, 425, 5, 13145);
-    			add_location(br1, file, 427, 5, 13361);
+    			add_location(span, file, 424, 4, 13078);
+    			add_location(br0, file, 425, 83, 13220);
+    			add_location(p, file, 425, 5, 13142);
+    			add_location(br1, file, 427, 5, 13358);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/vent_vanquish_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "VentVanquish");
-    			add_location(img, file, 428, 5, 13372);
+    			add_location(img, file, 428, 5, 13369);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3128,18 +3128,18 @@ var app = (function () {
     			t6 = space();
     			img1 = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 431, 4, 13512);
-    			add_location(br0, file, 432, 103, 13671);
-    			add_location(p, file, 432, 5, 13573);
-    			add_location(br1, file, 434, 5, 13759);
+    			add_location(span, file, 431, 4, 13509);
+    			add_location(br0, file, 432, 103, 13668);
+    			add_location(p, file, 432, 5, 13570);
+    			add_location(br1, file, 434, 5, 13756);
     			attr_dev(img0, "width", "250px");
     			if (img0.src !== (img0_src_value = "./img/pageItems/hornFrag.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "hornFragment");
-    			add_location(img0, file, 435, 5, 13770);
+    			add_location(img0, file, 435, 5, 13767);
     			attr_dev(img1, "width", "250px");
     			if (img1.src !== (img1_src_value = "./img/pageItems/branchFrag.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "branchFragment");
-    			add_location(img1, file, 436, 5, 13851);
+    			add_location(img1, file, 436, 5, 13848);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3202,13 +3202,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 439, 3, 14018);
-    			add_location(p, file, 440, 4, 14071);
-    			add_location(br, file, 441, 4, 14201);
+    			add_location(span, file, 439, 3, 14015);
+    			add_location(p, file, 440, 4, 14068);
+    			add_location(br, file, 441, 4, 14198);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/record_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "recordGif");
-    			add_location(img, file, 442, 5, 14212);
+    			add_location(img, file, 442, 5, 14209);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3269,14 +3269,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 445, 4, 14347);
-    			add_location(br0, file, 446, 78, 14484);
-    			add_location(p, file, 446, 5, 14411);
-    			add_location(br1, file, 448, 6, 14574);
+    			add_location(span, file, 445, 4, 14344);
+    			add_location(br0, file, 446, 78, 14481);
+    			add_location(p, file, 446, 5, 14408);
+    			add_location(br1, file, 448, 6, 14571);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/record_calendar_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "recordCalendar");
-    			add_location(img, file, 449, 5, 14585);
+    			add_location(img, file, 449, 5, 14582);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3340,14 +3340,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 452, 4, 14729);
-    			add_location(br0, file, 453, 102, 14887);
-    			add_location(p, file, 453, 5, 14790);
-    			add_location(br1, file, 455, 5, 14996);
+    			add_location(span, file, 452, 4, 14726);
+    			add_location(br0, file, 453, 102, 14884);
+    			add_location(p, file, 453, 5, 14787);
+    			add_location(br1, file, 455, 5, 14993);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/record_edit_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "recordEdit");
-    			add_location(img, file, 456, 5, 15007);
+    			add_location(img, file, 456, 5, 15004);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3397,8 +3397,8 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "\"Recall? Can I recall? Did you know, some people say that music triggers memories.\"";
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 459, 3, 15184);
-    			add_location(p, file, 460, 4, 15241);
+    			add_location(span, file, 459, 3, 15181);
+    			add_location(p, file, 460, 4, 15238);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3437,8 +3437,8 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "\"test\"";
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 463, 4, 15382);
-    			add_location(p, file, 464, 5, 15445);
+    			add_location(span, file, 463, 4, 15379);
+    			add_location(p, file, 464, 5, 15442);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3660,13 +3660,13 @@ var app = (function () {
     			attr_dev(div6, "class", "container");
     			add_location(div6, file, 179, 0, 3963);
     			attr_dev(span, "id", "dEmoLog");
-    			add_location(span, file, 474, 2, 15551);
-    			add_location(br1, file, 475, 2, 15614);
+    			add_location(span, file, 474, 2, 15548);
+    			add_location(br1, file, 475, 2, 15611);
     			attr_dev(a, "href", "https://github.com/5v1n0");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file, 476, 16, 15636);
-    			add_location(p1, file, 476, 2, 15622);
-    			add_location(footer, file, 473, 1, 15539);
+    			add_location(a, file, 476, 16, 15633);
+    			add_location(p1, file, 476, 2, 15619);
+    			add_location(footer, file, 473, 1, 15536);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
