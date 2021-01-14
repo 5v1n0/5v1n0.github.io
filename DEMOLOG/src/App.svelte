@@ -307,8 +307,17 @@ let aHistory =""
 			<div class="introBox">
 			{#if index === 0}
 				<span class="description-header">About</span>
-				<p>The Demon Emotion Log abbreviated: dEmoLog, is an app prototype that integrates game elements (gamification) to the traditional Mood Diary concept. <br>
-				The hope is that with Gamification added, users would have increased motivation to log their moods regularly, thus aiding their management of mental health.<br>
+				<p>The Demon Emotion Log abbreviated: dEmoLog, is an app prototype that integrates game elements <i>Gamification</i> to the traditional Mood Diary concept. <br>
+				The hope is that users would have increased motivation to log their moods regularly on a gamified version, thus aiding in their management of mental health.<br>
+				<span style="color:red;font-size: 12px;">**All footages shown are in alpha stage; not accurate representation of actual gameplay</span>
+				</p>
+				<br>
+				<span class="description-header">Metaphor</span>
+				<p>Many elements within the game are inspired by metaphors such as:<br>
+				- 'Demons' to represent mental illnessess<br>
+				- 'Mirror' to represent reflecting<br>
+				- 'Pens' to represent author<br>
+				- 'Vent' to represent emotion journalling<br>
 				</p>
 				<br>
 				<div id="right-inner-right">	
@@ -322,7 +331,7 @@ let aHistory =""
 	<div class="right-inner-left" transition:slide="{{duration: 300 }}">
 	<span class="description-header">Developer Notes</span>
 		<span><u>Gamification Integration</u></span>
-					<p>Some Gamification elements integrated in the app include:<br>
+					<p>Gamification elements integrated in the app include:<br>
 					- Narrative: create an immersive backstory/setting<br>
 					- Aesthetic: an specific aesthetic of artwork for further immersion<br>
 					- Game Mechanics: taking away mundaneness of emotion logging by turning task into a gaming experience<br>

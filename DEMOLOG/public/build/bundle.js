@@ -110,6 +110,9 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function set_style(node, key, value, important) {
+        node.style.setProperty(key, value, important ? 'important' : '');
+    }
     function custom_event(type, detail) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, false, false, detail);
@@ -2004,24 +2007,44 @@ var app = (function () {
 
     // (308:3) {#if index === 0}
     function create_if_block_16(ctx) {
-    	let span;
+    	let span0;
     	let t1;
-    	let p;
+    	let p0;
     	let t2;
-    	let br0;
-    	let t3;
-    	let br1;
+    	let i;
     	let t4;
-    	let br2;
+    	let br0;
     	let t5;
+    	let br1;
+    	let t6;
+    	let span1;
+    	let t8;
+    	let br2;
+    	let t9;
+    	let span2;
+    	let t11;
+    	let p1;
+    	let t12;
+    	let br3;
+    	let t13;
+    	let br4;
+    	let t14;
+    	let br5;
+    	let t15;
+    	let br6;
+    	let t16;
+    	let br7;
+    	let t17;
+    	let br8;
+    	let t18;
     	let div1;
     	let div0;
     	let label;
-    	let t7;
+    	let t20;
     	let input;
-    	let t8;
+    	let t21;
     	let hr;
-    	let t9;
+    	let t22;
     	let if_block_anchor;
     	let current;
     	let mounted;
@@ -2030,66 +2053,122 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			span = element("span");
-    			span.textContent = "About";
+    			span0 = element("span");
+    			span0.textContent = "About";
     			t1 = space();
-    			p = element("p");
-    			t2 = text("The Demon Emotion Log abbreviated: dEmoLog, is an app prototype that integrates game elements (gamification) to the traditional Mood Diary concept. ");
+    			p0 = element("p");
+    			t2 = text("The Demon Emotion Log abbreviated: dEmoLog, is an app prototype that integrates game elements ");
+    			i = element("i");
+    			i.textContent = "Gamification";
+    			t4 = text(" to the traditional Mood Diary concept. ");
     			br0 = element("br");
-    			t3 = text("\r\n\t\t\t\tThe hope is that with Gamification added, users would have increased motivation to log their moods regularly, thus aiding their management of mental health.");
+    			t5 = text("\r\n\t\t\t\tThe hope is that users would have increased motivation to log their moods regularly on a gamified version, thus aiding in their management of mental health.");
     			br1 = element("br");
-    			t4 = space();
+    			t6 = space();
+    			span1 = element("span");
+    			span1.textContent = "**All footages shown are in alpha stage; not accurate representation of actual gameplay";
+    			t8 = space();
     			br2 = element("br");
-    			t5 = space();
+    			t9 = space();
+    			span2 = element("span");
+    			span2.textContent = "Metaphor";
+    			t11 = space();
+    			p1 = element("p");
+    			t12 = text("Many elements within the game are inspired by metaphors such as:");
+    			br3 = element("br");
+    			t13 = text("\r\n\t\t\t\t- 'Demons' to represent mental illnessess");
+    			br4 = element("br");
+    			t14 = text("\r\n\t\t\t\t- 'Mirror' to represent reflecting");
+    			br5 = element("br");
+    			t15 = text("\r\n\t\t\t\t- 'Pens' to represent author");
+    			br6 = element("br");
+    			t16 = text("\r\n\t\t\t\t- 'Vent' to represent emotion journalling");
+    			br7 = element("br");
+    			t17 = space();
+    			br8 = element("br");
+    			t18 = space();
     			div1 = element("div");
     			div0 = element("div");
     			label = element("label");
     			label.textContent = "◓";
-    			t7 = space();
+    			t20 = space();
     			input = element("input");
-    			t8 = space();
+    			t21 = space();
     			hr = element("hr");
-    			t9 = space();
+    			t22 = space();
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
-    			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 308, 4, 7180);
-    			add_location(br0, file, 309, 155, 7382);
-    			add_location(br1, file, 310, 160, 7548);
-    			add_location(p, file, 309, 4, 7231);
-    			add_location(br2, file, 312, 4, 7568);
+    			attr_dev(span0, "class", "description-header");
+    			add_location(span0, file, 308, 4, 7180);
+    			add_location(i, file, 309, 101, 7328);
+    			add_location(br0, file, 309, 160, 7387);
+    			add_location(br1, file, 310, 160, 7553);
+    			set_style(span1, "color", "red");
+    			set_style(span1, "font-size", "12px");
+    			add_location(span1, file, 311, 4, 7563);
+    			add_location(p0, file, 309, 4, 7231);
+    			add_location(br2, file, 313, 4, 7714);
+    			attr_dev(span2, "class", "description-header");
+    			add_location(span2, file, 314, 4, 7724);
+    			add_location(br3, file, 315, 71, 7845);
+    			add_location(br4, file, 316, 45, 7896);
+    			add_location(br5, file, 317, 38, 7940);
+    			add_location(br6, file, 318, 32, 7978);
+    			add_location(br7, file, 319, 45, 8029);
+    			add_location(p1, file, 315, 4, 7778);
+    			add_location(br8, file, 321, 4, 8049);
     			attr_dev(label, "for", "toggleShowHideCheck");
-    			add_location(label, file, 315, 1, 7631);
+    			add_location(label, file, 324, 1, 8112);
     			attr_dev(input, "id", "toggleShowHideCheck");
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "class", "check-box");
-    			add_location(input, file, 316, 2, 7684);
-    			add_location(hr, file, 317, 2, 7788);
+    			add_location(input, file, 325, 2, 8165);
+    			add_location(hr, file, 326, 2, 8269);
     			attr_dev(div0, "id", "blinder");
-    			add_location(div0, file, 314, 1, 7610);
+    			add_location(div0, file, 323, 1, 8091);
     			attr_dev(div1, "id", "right-inner-right");
-    			add_location(div1, file, 313, 4, 7578);
+    			add_location(div1, file, 322, 4, 8059);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, span, anchor);
+    			insert_dev(target, span0, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t2);
-    			append_dev(p, br0);
-    			append_dev(p, t3);
-    			append_dev(p, br1);
-    			insert_dev(target, t4, anchor);
+    			insert_dev(target, p0, anchor);
+    			append_dev(p0, t2);
+    			append_dev(p0, i);
+    			append_dev(p0, t4);
+    			append_dev(p0, br0);
+    			append_dev(p0, t5);
+    			append_dev(p0, br1);
+    			append_dev(p0, t6);
+    			append_dev(p0, span1);
+    			insert_dev(target, t8, anchor);
     			insert_dev(target, br2, anchor);
-    			insert_dev(target, t5, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, span2, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, p1, anchor);
+    			append_dev(p1, t12);
+    			append_dev(p1, br3);
+    			append_dev(p1, t13);
+    			append_dev(p1, br4);
+    			append_dev(p1, t14);
+    			append_dev(p1, br5);
+    			append_dev(p1, t15);
+    			append_dev(p1, br6);
+    			append_dev(p1, t16);
+    			append_dev(p1, br7);
+    			insert_dev(target, t17, anchor);
+    			insert_dev(target, br8, anchor);
+    			insert_dev(target, t18, anchor);
     			insert_dev(target, div1, anchor);
     			append_dev(div1, div0);
     			append_dev(div0, label);
-    			append_dev(div0, t7);
+    			append_dev(div0, t20);
     			append_dev(div0, input);
     			input.checked = /*showRightInnerLeft*/ ctx[0];
-    			append_dev(div0, t8);
+    			append_dev(div0, t21);
     			append_dev(div0, hr);
-    			insert_dev(target, t9, anchor);
+    			insert_dev(target, t22, anchor);
     			if (if_block) if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     			current = true;
@@ -2135,14 +2214,20 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(span);
+    			if (detaching) detach_dev(span0);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(p0);
+    			if (detaching) detach_dev(t8);
     			if (detaching) detach_dev(br2);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(span2);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(br8);
+    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t22);
     			if (if_block) if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
     			mounted = false;
@@ -2161,7 +2246,7 @@ var app = (function () {
     	return block;
     }
 
-    // (321:2) {#if showRightInnerLeft === true}
+    // (330:2) {#if showRightInnerLeft === true}
     function create_if_block_17(ctx) {
     	let div;
     	let span0;
@@ -2215,7 +2300,7 @@ var app = (function () {
     			u0.textContent = "Gamification Integration";
     			t3 = space();
     			p0 = element("p");
-    			t4 = text("Some Gamification elements integrated in the app include:");
+    			t4 = text("Gamification elements integrated in the app include:");
     			br0 = element("br");
     			t5 = text("\r\n\t\t\t\t\t- Narrative: create an immersive backstory/setting");
     			br1 = element("br");
@@ -2249,27 +2334,27 @@ var app = (function () {
     			br8 = element("br");
     			t21 = text("\r\n\t\t\t\t\t- Current info is accurate as of 14 Jan 2021");
     			attr_dev(span0, "class", "description-header");
-    			add_location(span0, file, 322, 1, 7921);
-    			add_location(u0, file, 323, 8, 7986);
-    			add_location(span1, file, 323, 2, 7980);
-    			add_location(br0, file, 324, 65, 8091);
-    			add_location(br1, file, 325, 55, 8152);
-    			add_location(br2, file, 326, 72, 8230);
-    			add_location(br3, file, 327, 106, 8342);
-    			add_location(p0, file, 324, 5, 8031);
-    			add_location(br4, file, 330, 4, 8441);
-    			add_location(u1, file, 331, 8, 8455);
-    			add_location(span2, file, 331, 2, 8449);
-    			add_location(br5, file, 332, 118, 8626);
-    			add_location(br6, file, 333, 173, 8805);
-    			add_location(p1, file, 332, 5, 8513);
-    			add_location(br7, file, 336, 4, 8906);
-    			add_location(u2, file, 337, 8, 8920);
-    			add_location(span3, file, 337, 2, 8914);
-    			add_location(br8, file, 338, 39, 8991);
-    			add_location(p2, file, 338, 5, 8957);
+    			add_location(span0, file, 331, 1, 8402);
+    			add_location(u0, file, 332, 8, 8467);
+    			add_location(span1, file, 332, 2, 8461);
+    			add_location(br0, file, 333, 60, 8567);
+    			add_location(br1, file, 334, 55, 8628);
+    			add_location(br2, file, 335, 72, 8706);
+    			add_location(br3, file, 336, 106, 8818);
+    			add_location(p0, file, 333, 5, 8512);
+    			add_location(br4, file, 339, 4, 8917);
+    			add_location(u1, file, 340, 8, 8931);
+    			add_location(span2, file, 340, 2, 8925);
+    			add_location(br5, file, 341, 118, 9102);
+    			add_location(br6, file, 342, 173, 9281);
+    			add_location(p1, file, 341, 5, 8989);
+    			add_location(br7, file, 345, 4, 9382);
+    			add_location(u2, file, 346, 8, 9396);
+    			add_location(span3, file, 346, 2, 9390);
+    			add_location(br8, file, 347, 39, 9467);
+    			add_location(p2, file, 347, 5, 9433);
     			attr_dev(div, "class", "right-inner-left");
-    			add_location(div, file, 321, 1, 7850);
+    			add_location(div, file, 330, 1, 8331);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2337,14 +2422,14 @@ var app = (function () {
     		block,
     		id: create_if_block_17.name,
     		type: "if",
-    		source: "(321:2) {#if showRightInnerLeft === true}",
+    		source: "(330:2) {#if showRightInnerLeft === true}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (348:3) {#if index === 1 && subNavTrack === "" || subNavTrack === "Home"}
+    // (357:3) {#if index === 1 && subNavTrack === "" || subNavTrack === "Home"}
     function create_if_block_15(ctx) {
     	let div;
     	let span;
@@ -2370,14 +2455,14 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 349, 3, 9223);
-    			add_location(p, file, 350, 4, 9273);
-    			add_location(br, file, 352, 4, 9355);
+    			add_location(span, file, 358, 3, 9699);
+    			add_location(p, file, 359, 4, 9749);
+    			add_location(br, file, 361, 4, 9831);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/home_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "homeGif");
-    			add_location(img, file, 353, 4, 9365);
-    			add_location(div, file, 348, 3, 9173);
+    			add_location(img, file, 362, 4, 9841);
+    			add_location(div, file, 357, 3, 9649);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2407,14 +2492,14 @@ var app = (function () {
     		block,
     		id: create_if_block_15.name,
     		type: "if",
-    		source: "(348:3) {#if index === 1 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Home\\\"}",
+    		source: "(357:3) {#if index === 1 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Home\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (357:4) {#if subNavTrack === "Avatar"}
+    // (366:4) {#if subNavTrack === "Avatar"}
     function create_if_block_14(ctx) {
     	let span;
     	let t1;
@@ -2446,14 +2531,14 @@ var app = (function () {
     			t6 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 357, 4, 9505);
-    			add_location(br0, file, 358, 48, 9610);
-    			add_location(p, file, 358, 5, 9567);
-    			add_location(br1, file, 359, 5, 9715);
-    			add_location(br2, file, 360, 5, 9726);
+    			add_location(span, file, 366, 4, 9981);
+    			add_location(br0, file, 367, 48, 10086);
+    			add_location(p, file, 367, 5, 10043);
+    			add_location(br1, file, 368, 5, 10191);
+    			add_location(br2, file, 369, 5, 10202);
     			if (img.src !== (img_src_value = "./img/pageItems/qpen.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "quillPen");
-    			add_location(img, file, 361, 5, 9737);
+    			add_location(img, file, 370, 5, 10213);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2486,14 +2571,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14.name,
     		type: "if",
-    		source: "(357:4) {#if subNavTrack === \\\"Avatar\\\"}",
+    		source: "(366:4) {#if subNavTrack === \\\"Avatar\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (365:4) {#if subNavTrack === "Inventory"}
+    // (374:4) {#if subNavTrack === "Inventory"}
     function create_if_block_13(ctx) {
     	let span;
     	let t1;
@@ -2521,14 +2606,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 365, 4, 9852);
-    			add_location(br0, file, 366, 91, 10003);
-    			add_location(p, file, 366, 5, 9917);
-    			add_location(br1, file, 367, 5, 10053);
+    			add_location(span, file, 374, 4, 10328);
+    			add_location(br0, file, 375, 91, 10479);
+    			add_location(p, file, 375, 5, 10393);
+    			add_location(br1, file, 376, 5, 10529);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/inventory_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "inventoryGif");
-    			add_location(img, file, 368, 5, 10064);
+    			add_location(img, file, 377, 5, 10540);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2557,14 +2642,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13.name,
     		type: "if",
-    		source: "(365:4) {#if subNavTrack === \\\"Inventory\\\"}",
+    		source: "(374:4) {#if subNavTrack === \\\"Inventory\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (380:3) {#if index === 2 && subNavTrack === "" || subNavTrack === "Beastiary"}
+    // (389:3) {#if index === 2 && subNavTrack === "" || subNavTrack === "Beastiary"}
     function create_if_block_12(ctx) {
     	let span;
     	let t1;
@@ -2590,14 +2675,14 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 380, 3, 10665);
-    			add_location(br0, file, 381, 71, 10787);
-    			add_location(p, file, 381, 4, 10720);
-    			add_location(br1, file, 382, 4, 10801);
+    			add_location(span, file, 389, 3, 11141);
+    			add_location(br0, file, 390, 71, 11263);
+    			add_location(p, file, 390, 4, 11196);
+    			add_location(br1, file, 391, 4, 11277);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiaryGif");
-    			add_location(img, file, 383, 4, 10811);
+    			add_location(img, file, 392, 4, 11287);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2625,14 +2710,14 @@ var app = (function () {
     		block,
     		id: create_if_block_12.name,
     		type: "if",
-    		source: "(380:3) {#if index === 2 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Beastiary\\\"}",
+    		source: "(389:3) {#if index === 2 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Beastiary\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (386:4) {#if subNavTrack === "Lore"}
+    // (395:4) {#if subNavTrack === "Lore"}
     function create_if_block_11(ctx) {
     	let span;
     	let t1;
@@ -2655,13 +2740,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 386, 4, 10948);
-    			add_location(p, file, 387, 5, 11008);
-    			add_location(br, file, 388, 5, 11099);
+    			add_location(span, file, 395, 4, 11424);
+    			add_location(p, file, 396, 5, 11484);
+    			add_location(br, file, 397, 5, 11575);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_lore_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiaryLore");
-    			add_location(img, file, 389, 5, 11110);
+    			add_location(img, file, 398, 5, 11586);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2687,14 +2772,14 @@ var app = (function () {
     		block,
     		id: create_if_block_11.name,
     		type: "if",
-    		source: "(386:4) {#if subNavTrack === \\\"Lore\\\"}",
+    		source: "(395:4) {#if subNavTrack === \\\"Lore\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (392:4) {#if subNavTrack === "Select"}
+    // (401:4) {#if subNavTrack === "Select"}
     function create_if_block_10(ctx) {
     	let span;
     	let t1;
@@ -2717,13 +2802,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 392, 4, 11253);
-    			add_location(p, file, 393, 5, 11315);
-    			add_location(br, file, 394, 5, 11449);
+    			add_location(span, file, 401, 4, 11729);
+    			add_location(p, file, 402, 5, 11791);
+    			add_location(br, file, 403, 5, 11925);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_select_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiarySelect");
-    			add_location(img, file, 395, 5, 11460);
+    			add_location(img, file, 404, 5, 11936);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2749,14 +2834,14 @@ var app = (function () {
     		block,
     		id: create_if_block_10.name,
     		type: "if",
-    		source: "(392:4) {#if subNavTrack === \\\"Select\\\"}",
+    		source: "(401:4) {#if subNavTrack === \\\"Select\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (398:4) {#if subNavTrack === "Unlock"}
+    // (407:4) {#if subNavTrack === "Unlock"}
     function create_if_block_9(ctx) {
     	let span;
     	let t1;
@@ -2779,13 +2864,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 398, 4, 11607);
-    			add_location(p, file, 399, 5, 11670);
-    			add_location(br, file, 400, 5, 11809);
+    			add_location(span, file, 407, 4, 12083);
+    			add_location(p, file, 408, 5, 12146);
+    			add_location(br, file, 409, 5, 12285);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/beastiary_unlock_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "beastiaryUnlock");
-    			add_location(img, file, 401, 5, 11820);
+    			add_location(img, file, 410, 5, 12296);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2811,14 +2896,14 @@ var app = (function () {
     		block,
     		id: create_if_block_9.name,
     		type: "if",
-    		source: "(398:4) {#if subNavTrack === \\\"Unlock\\\"}",
+    		source: "(407:4) {#if subNavTrack === \\\"Unlock\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (404:3) {#if index === 3 && subNavTrack === "" || subNavTrack === "Vent"}
+    // (413:3) {#if index === 3 && subNavTrack === "" || subNavTrack === "Vent"}
     function create_if_block_8(ctx) {
     	let span;
     	let t1;
@@ -2844,14 +2929,14 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 404, 3, 12000);
-    			add_location(br0, file, 405, 49, 12095);
-    			add_location(p, file, 405, 4, 12050);
-    			add_location(br1, file, 406, 4, 12109);
+    			add_location(span, file, 413, 3, 12476);
+    			add_location(br0, file, 414, 49, 12571);
+    			add_location(p, file, 414, 4, 12526);
+    			add_location(br1, file, 415, 4, 12585);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/vent_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "VentGif");
-    			add_location(img, file, 407, 5, 12120);
+    			add_location(img, file, 416, 5, 12596);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2879,14 +2964,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8.name,
     		type: "if",
-    		source: "(404:3) {#if index === 3 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Vent\\\"}",
+    		source: "(413:3) {#if index === 3 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Vent\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (410:4) {#if subNavTrack === "Emotion Tomes"}
+    // (419:4) {#if subNavTrack === "Emotion Tomes"}
     function create_if_block_7(ctx) {
     	let span;
     	let t1;
@@ -2905,12 +2990,12 @@ var app = (function () {
     			t3 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 410, 4, 12256);
-    			add_location(p, file, 411, 5, 12325);
+    			add_location(span, file, 419, 4, 12732);
+    			add_location(p, file, 420, 5, 12801);
     			attr_dev(img, "width", "600px");
     			if (img.src !== (img_src_value = "./img/pageItems/books.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "emotionTomes");
-    			add_location(img, file, 412, 5, 12479);
+    			add_location(img, file, 421, 5, 12955);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2932,14 +3017,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(410:4) {#if subNavTrack === \\\"Emotion Tomes\\\"}",
+    		source: "(419:4) {#if subNavTrack === \\\"Emotion Tomes\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (415:4) {#if subNavTrack === "Vanquish"}
+    // (424:4) {#if subNavTrack === "Vanquish"}
     function create_if_block_6(ctx) {
     	let span;
     	let t1;
@@ -2967,14 +3052,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 415, 4, 12605);
-    			add_location(br0, file, 416, 83, 12747);
-    			add_location(p, file, 416, 5, 12669);
-    			add_location(br1, file, 418, 5, 12885);
+    			add_location(span, file, 424, 4, 13081);
+    			add_location(br0, file, 425, 83, 13223);
+    			add_location(p, file, 425, 5, 13145);
+    			add_location(br1, file, 427, 5, 13361);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/vent_vanquish_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "VentVanquish");
-    			add_location(img, file, 419, 5, 12896);
+    			add_location(img, file, 428, 5, 13372);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3003,14 +3088,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(415:4) {#if subNavTrack === \\\"Vanquish\\\"}",
+    		source: "(424:4) {#if subNavTrack === \\\"Vanquish\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (422:4) {#if subNavTrack === "Loots"}
+    // (431:4) {#if subNavTrack === "Loots"}
     function create_if_block_5(ctx) {
     	let span;
     	let t1;
@@ -3043,18 +3128,18 @@ var app = (function () {
     			t6 = space();
     			img1 = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 422, 4, 13036);
-    			add_location(br0, file, 423, 103, 13195);
-    			add_location(p, file, 423, 5, 13097);
-    			add_location(br1, file, 425, 5, 13283);
+    			add_location(span, file, 431, 4, 13512);
+    			add_location(br0, file, 432, 103, 13671);
+    			add_location(p, file, 432, 5, 13573);
+    			add_location(br1, file, 434, 5, 13759);
     			attr_dev(img0, "width", "250px");
     			if (img0.src !== (img0_src_value = "./img/pageItems/hornFrag.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "hornFragment");
-    			add_location(img0, file, 426, 5, 13294);
+    			add_location(img0, file, 435, 5, 13770);
     			attr_dev(img1, "width", "250px");
     			if (img1.src !== (img1_src_value = "./img/pageItems/branchFrag.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "branchFragment");
-    			add_location(img1, file, 427, 5, 13375);
+    			add_location(img1, file, 436, 5, 13851);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3087,14 +3172,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(422:4) {#if subNavTrack === \\\"Loots\\\"}",
+    		source: "(431:4) {#if subNavTrack === \\\"Loots\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (430:3) {#if index === 4 && subNavTrack === "" || subNavTrack === "Records"}
+    // (439:3) {#if index === 4 && subNavTrack === "" || subNavTrack === "Records"}
     function create_if_block_4(ctx) {
     	let span;
     	let t1;
@@ -3117,13 +3202,13 @@ var app = (function () {
     			t4 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 430, 3, 13542);
-    			add_location(p, file, 431, 4, 13595);
-    			add_location(br, file, 432, 4, 13725);
+    			add_location(span, file, 439, 3, 14018);
+    			add_location(p, file, 440, 4, 14071);
+    			add_location(br, file, 441, 4, 14201);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/record_forever.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "recordGif");
-    			add_location(img, file, 433, 5, 13736);
+    			add_location(img, file, 442, 5, 14212);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3149,14 +3234,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(430:3) {#if index === 4 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Records\\\"}",
+    		source: "(439:3) {#if index === 4 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Records\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (436:4) {#if subNavTrack === "Calendar"}
+    // (445:4) {#if subNavTrack === "Calendar"}
     function create_if_block_3(ctx) {
     	let span;
     	let t1;
@@ -3184,14 +3269,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 436, 4, 13871);
-    			add_location(br0, file, 437, 78, 14008);
-    			add_location(p, file, 437, 5, 13935);
-    			add_location(br1, file, 439, 6, 14098);
+    			add_location(span, file, 445, 4, 14347);
+    			add_location(br0, file, 446, 78, 14484);
+    			add_location(p, file, 446, 5, 14411);
+    			add_location(br1, file, 448, 6, 14574);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/record_calendar_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "recordCalendar");
-    			add_location(img, file, 440, 5, 14109);
+    			add_location(img, file, 449, 5, 14585);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3220,14 +3305,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(436:4) {#if subNavTrack === \\\"Calendar\\\"}",
+    		source: "(445:4) {#if subNavTrack === \\\"Calendar\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (443:4) {#if subNavTrack === "Notes"}
+    // (452:4) {#if subNavTrack === "Notes"}
     function create_if_block_2(ctx) {
     	let span;
     	let t1;
@@ -3255,14 +3340,14 @@ var app = (function () {
     			t5 = space();
     			img = element("img");
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 443, 4, 14253);
-    			add_location(br0, file, 444, 102, 14411);
-    			add_location(p, file, 444, 5, 14314);
-    			add_location(br1, file, 446, 5, 14520);
+    			add_location(span, file, 452, 4, 14729);
+    			add_location(br0, file, 453, 102, 14887);
+    			add_location(p, file, 453, 5, 14790);
+    			add_location(br1, file, 455, 5, 14996);
     			attr_dev(img, "class", "gifHolder");
     			if (img.src !== (img_src_value = "./img/pageItems/record_edit_once.gif")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "recordEdit");
-    			add_location(img, file, 447, 5, 14531);
+    			add_location(img, file, 456, 5, 15007);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3291,14 +3376,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(443:4) {#if subNavTrack === \\\"Notes\\\"}",
+    		source: "(452:4) {#if subNavTrack === \\\"Notes\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (450:3) {#if index === 5 && subNavTrack === "" || subNavTrack === "Composition"}
+    // (459:3) {#if index === 5 && subNavTrack === "" || subNavTrack === "Composition"}
     function create_if_block_1(ctx) {
     	let span;
     	let t1;
@@ -3312,8 +3397,8 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "\"Recall? Can I recall? Did you know, some people say that music triggers memories.\"";
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 450, 3, 14708);
-    			add_location(p, file, 451, 4, 14765);
+    			add_location(span, file, 459, 3, 15184);
+    			add_location(p, file, 460, 4, 15241);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3331,14 +3416,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(450:3) {#if index === 5 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Composition\\\"}",
+    		source: "(459:3) {#if index === 5 && subNavTrack === \\\"\\\" || subNavTrack === \\\"Composition\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (454:4) {#if subNavTrack === "-WIP-"}
+    // (463:4) {#if subNavTrack === "-WIP-"}
     function create_if_block(ctx) {
     	let span;
     	let t1;
@@ -3352,8 +3437,8 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "\"test\"";
     			attr_dev(span, "class", "description-header");
-    			add_location(span, file, 454, 4, 14906);
-    			add_location(p, file, 455, 5, 14969);
+    			add_location(span, file, 463, 4, 15382);
+    			add_location(p, file, 464, 5, 15445);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3371,7 +3456,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(454:4) {#if subNavTrack === \\\"-WIP-\\\"}",
+    		source: "(463:4) {#if subNavTrack === \\\"-WIP-\\\"}",
     		ctx
     	});
 
@@ -3575,13 +3660,13 @@ var app = (function () {
     			attr_dev(div6, "class", "container");
     			add_location(div6, file, 179, 0, 3963);
     			attr_dev(span, "id", "dEmoLog");
-    			add_location(span, file, 465, 2, 15075);
-    			add_location(br1, file, 466, 2, 15138);
+    			add_location(span, file, 474, 2, 15551);
+    			add_location(br1, file, 475, 2, 15614);
     			attr_dev(a, "href", "https://github.com/5v1n0");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file, 467, 16, 15160);
-    			add_location(p1, file, 467, 2, 15146);
-    			add_location(footer, file, 464, 1, 15063);
+    			add_location(a, file, 476, 16, 15636);
+    			add_location(p1, file, 476, 2, 15622);
+    			add_location(footer, file, 473, 1, 15539);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
